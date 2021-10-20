@@ -1,11 +1,40 @@
-<h3>Ejercicio:</h3>
-<p>4.1) Dado un entero N entre 1 y 10 (inclusive), la computadora muestra la tabla de
+<h3>Ejercicio 4.1):</h3>
+<p class="ejercicio">Dado un entero N entre 1 y 10 (inclusive), la computadora muestra la tabla de
     multiplicar de N</p>
 
 <h3>Resolución:</h3>
 
 <div class="codigojava">
-    <p>CODIGO</p>
+    <p>
+       <b class="textblue">import</b>  java.util.Scanner; <br>
+public class <b>Ejercicio41</b> { <p class="textgray">// se debe remplazar por el nombre del ejercicio por el que le has dado</p><br>
+    public static void main(String[] args) {<br>
+        <br>
+        <b class="textblue">int</b> numero=0;<br>
+        <b class="textblue">int</b> resultado=0;<br>
+        Scanner tecla=<b class="textblue">new</b> Scanner (System.<b class="textgreen">in</b>);<br>
+        System.<b class="textgreen">out</b>.println(<b class="textorange">"Ingrese un numero entre 1 y 10 Inclusive: "</b>);<br>
+        numero=tecla.nextInt();<br>
+        <br>
+        <br>
+       <b class="textblue"> while</b>(numero>=1&&numero<=10){<br>
+            <br>
+            <b class="textblue">for</b>(<b class="textblue">int</b> i=0;i<=10;i++){<br>
+                resultado=numero*i;<br>
+                System.<b class="textgreen">out</b>.println(numero+<b class="textorange">"X"</b>+i+<b class="textorange">"="</b>+resultado);<br>
+            }<br>
+            <br>
+            System.<b class="textgreen">out</b>.println(<b class="textorange">"ingrese otro numero"</b>);<br>
+             numero=tecla.nextInt();<br>
+        }<br>
+        System.<b class="textgreen">out</b>.println(<b class="textorange">"ingresaste un numero fuera del rango"</b>);<br>
+            <br>
+
+    }
+    <br>
+}
+
+    </p>
 </div>
 
 

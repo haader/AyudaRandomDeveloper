@@ -384,3 +384,31 @@ nav a,.noselección a{
     }
 
 }
+
+/*codido java*/
+
+.ejercicio{
+font-family:"Roboto Mono",monospace ;
+}    
+.codigojava{
+    border: solid;
+    border-color: greenyellow;
+    background-color: rgb(209, 199, 199);
+    
+    font-family: "SF Mono","Roboto Mono",monospace;
+}
+
+.textblue{
+    color: rgb(3, 3, 102);
+}
+
+.textorange{
+    color: rgb(189, 124, 3);
+}
+.textgreen{
+    color: rgb(3, 94, 3);
+}
+
+.textgray{
+    color: gray;
+}
