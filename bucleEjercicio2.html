@@ -1,6 +1,55 @@
 <h3>Ejercicio 5.2):</h3>
+
 <p class="ejercicio"> 5.2) Se ingresan notas numéricas de 0 a 10. El proceso de carga finaliza cuando se
     detecta un número fuera de rango (negativo o mayor que 10). La computadora
     muestra el promedio de las notas. </p>
 
 <h3>Resolución:</h3>
+
+<div class="codigojava">
+
+    <p>
+*<br>
+* @author 37adr<br>
+*/<br>
+import java.util.Scanner;<br>
+public class ejercicio52 {<br>
+    public static void main(String[] args){<br>
+        <br>
+        double numero=0;<br>
+        int cont=0;<br>
+        double promedio=0;<br>
+        double suma=0;<br>
+        <br>
+        Scanner teclado=new Scanner(System.in);<br>
+        <br>
+        <br>
+        System.out.println("ingrese la nota");<br>
+        numero=teclado.nextInt();<br>
+        <br>
+        while(numero<""10&&numero>0){<br>
+        cont++;<br>
+        suma+=numero;<br>
+        promedio=suma/cont;<br>
+        <br>
+        System.out.println("ingrese otra nota");<br>
+        numero=teclado.nextInt();<br>
+        }<br>
+        System.out.println("las notas que ingresaste son: "+cont);<br>
+        System.out.println("el prmedio de las nota es: "+promedio);<br>
+    }<br>
+    <br>
+}
+
+
+    </p>
+</div>
+
+
+
+<h3>Vídeo:</h3>
+
+    <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/R2FTVSB70kw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </div>
