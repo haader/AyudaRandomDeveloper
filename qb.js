@@ -65,6 +65,39 @@ function hover6(){
     
 };
 
+function hover7(){
+    if (clic==true){
+        document.getElementById("unidad7c").style.display="grid";
+        clic=false;
+    }else{
+        document.getElementById("unidad7c").style.display="none";
+        clic=true
+    }
+    
+};
+
+function hover8(){
+    if (clic==true){
+        document.getElementById("unidad8c").style.display="grid";
+        clic=false;
+    }else{
+        document.getElementById("unidad8c").style.display="none";
+        clic=true
+    }
+    
+};
+
+function hover9(){
+    if (clic==true){
+        document.getElementById("unidad9c").style.display="grid";
+        clic=false;
+    }else{
+        document.getElementById("unidad9c").style.display="none";
+        clic=true
+    }
+    
+};
+
 function hoverb(){
     if (clic==true){
         document.getElementById("bibliografiac").style.display="grid";

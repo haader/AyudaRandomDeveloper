@@ -88,13 +88,17 @@ nav a,.noselección a{
     margin-top: 0.2rem;
     padding: 1px;
 }
+.unidadv{
+color: red;
+}
 
-.unidad1:hover,.unidad2:hover,.unidad3:hover,.unidad4:hover,.unidad5:hover,.unidad6:hover,.bibliografia:hover{
-    border: springgreen solid;
+.unidad1:hover,.unidad2:hover,.unidad3:hover,.unidad4:hover,.unidad5:hover,.unidad6:hover,
+.unidad7:hover,.unidad7v:hover,.unidad8:hover,.unidad9:hover,.unidadv:hover{
+    border: rgb(211, 5, 5) solid;
     
 }
 
-.unidad1c,.unidad2c,.unidad3c,.unidad4c,.unidad5c,.unidad6c, .bibliografiac{
+.unidad1c,.unidad2c,.unidad3c,.unidad4c,.unidad5c,.unidad6c, .unidad7c,.unidad8c,.unidad9c{
     display:none;
 }
 .desarrollo{
