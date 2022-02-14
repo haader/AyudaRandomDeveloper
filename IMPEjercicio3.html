@@ -5,30 +5,25 @@
 
 <div class="codigojava">
     <p>
-        import java.util.Scanner;
-public class suma {
+        <b class="textblue">import</b> java.util.Scanner;<br>public <b class="textgray">class</b> suma {<br>
     
-    public static void main(String[] args){
+    public static void main(String[] args){<br><br>
        
-        int valor1=0;
-        int valor2=0;
-        int suma=0;
+        <b class="textblue">int</b> valor1=0;<br>        <b class="textblue">int</b> valor2=0;<br>        <b class="textblue">int</b> suma=0;<br>        
+        Scanner teclado=<b class="textblue">new</b>Scanner(System.<b class="textgreen">in</b>);<br>
         
-        Scanner teclado=new Scanner(System.in);
+        System.<b class="textgreen">out</b>.print(<b class="textorange">"ingrese valor 1"</b>);<br>
         
-        System.out.print("ingrese valor 1");
+        valor1=teclado.nextInt();<br>
         
-        valor1=teclado.nextInt();
+        System.<b class="textgreen">out</b>.print(<b class="textorange">"ingrese valor 2"</b>);<br>
         
-        System.out.print("ingrese valor 2");
+        valor2=teclado.nextInt();<br>
         
-        valor2=teclado.nextInt();
-        
-        suma=valor1+valor2;
-        
-        System.out.println("el valor de la suma entre "+valor1 +" y " + valor2+"es igual a "+ suma);
-    }
-}
+        suma=valor1+valor2;<br>        
+        System.<b class="textgreen">out</b>.println(<b class="textorange">"el valor de la suma entre "</b>+valor1 +<b class="textorange">" y "</b>+ valor2+<b class="textorange">"es igual a "</b>+ suma);<br>
+    }<br>
+}<br>
 
     </p>
 </div>

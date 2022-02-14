@@ -4,30 +4,35 @@
 <h3>Resolución:</h3>
 
 <div class="codigojava">
+    
     <p>
-        */
-import java.util.Scanner;
+  
+        <b class="textblue">import</b> java.util.Scanner;<br>
+        
+        public <b class="textgray">class</b> CargaDatos {
+           
+            public static void main(String [] args){<br><br>
+               
+                String nombre="";<br>
+                String apellido="";<br>
+                
+                Scanner teclado=<b class="textblue">new</b> Scanner(System.<b class="textgreen">in</b>);<br><br>
+                
+                System.<b class="textgreen">out</b>.println(<b class="textorange">"ingese su nombre"</b>);<br><br>
+                nombre=teclado.next();<br><br>
+                
+                System.<b class="textgreen">out</b>.println(<b class="textorange">"ingrese su apellido"</b>);<br><br>
+                apellido=teclado.next();<br><br>
+                
+                System.<b class="textgreen">out</b>.println(<b class="textorange">"Hola "</b>+nombre+<b class="textorange">" "</b>+apellido);<br><br>
+            }<br>
+        }<br>
+        
+            </p>
 
-public class CargaDatos {
-   
-    public static void main(String [] args){
-       
-        String nombre="";
-        String apellido="";
+    
+    
         
-        Scanner teclado=new Scanner(System.in);
-        
-        System.out.println("ingese su nombre");
-        nombre=teclado.next();
-        
-        System.out.println("ingrese su apellido");
-        apellido=teclado.next();
-        
-        System.out.println("Hola "+nombre+" "+apellido);
-    }
-}
-
-    </p>
 </div>
 
 
