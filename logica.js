@@ -1,4 +1,19 @@
+/*imagen logo*/
 
+hover=true;
+function hoverLogo(){
+
+    if (hover==true){
+        document.getElementById("serio").style.display="inline-block";
+        hover=false;
+    }else{
+        document.getElementById("serio").style.display="none";
+        hover=true;
+    }
+    
+
+
+};
                 /*Codigo para aparecer y desaparecer las listas*/
 clic=true;
 function clickA1(){

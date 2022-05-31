@@ -22,19 +22,97 @@
     
 }
 
-.nav{
-    height: 3rem;
-    background-color: gray;
-    outline: 3px solid;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(90, 90, 90);
-}
+/*nav*/
+        .imagen{
+            display: inline-block;
+            position: relative;
+            width: 5rem;
+            height: 5rem;
+            overflow: hidden;
+            border-radius: 50%;
+            outline: 1px solid red;
+        }
+        .imagen img{
+            width: auto;
+            height: 100%;
+            position: absolute;
+            
+        }
 
-.nav a{
-    text-decoration: none;
-}
+        .imagen #fondo{
+            z-index: 0;
+            margin-left:-50px;
+        }
+        
+        .imagen #feliz{
+            
+            margin: left 0;
+            z-index: 3;
+            margin-left:-35px;
+        }
+
+                        .imagen #feliz:hover{
+                            display: none;
+                        }
+        
+        .imagen #serio{
+            margin: left 0;
+            z-index: 2;
+            margin-left:-35px;
+        }
+
+        .imagen #cry{
+            
+            margin: left 0;
+            z-index: 1;
+            margin-left:-35px;
+        }
+
+
+
+
+                        .divlogo *{
+                            font-family: 'Lucida Console', cursive;
+                            font-size: 3rem;
+                        }
+                        .divlogo #random-logo{
+                            
+                            padding-left: 0px;
+                            color: rgb(212, 205, 205);
+                            display: inline;
+                            padding-right:0rem;
+                        }
+
+                        .divlogo #developer-logo{
+                            
+                            padding-left: 0px;
+                            color: rgb(212, 205, 205);
+                            display: inline;
+                            padding-right:0rem;
+                        }
+
+                        .divlogo #ayuda-logo{
+                            
+                            padding-left: 0px;
+                            color: rgb(212, 205, 205);
+                            display: inline;
+                            padding-right:0rem;
+                        }
+
+        .nav{
+            
+            height: 5rem;
+            background-color: gray;
+            outline: 3px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(92, 40, 40);
+        }
+
+        .nav a{
+            text-decoration: none;
+        }
 
 
 .menunav, .noselección, .selección{
@@ -44,19 +122,9 @@
     
 }
 
-.divlogo {
-    font-family: 'Rampart One', cursive;
-    padding-left: 0px;
-    color: rgb(212, 205, 205);
-    font-size: 1rem;
-    display: inline;
-    padding-right:5rem;
-}
 
-.divlogo{
-    font-size: 2rem;
-    
-}
+
+
 
 .selección a{
     color:rgb(251, 255, 252);
@@ -149,13 +217,14 @@ color: red;
     background-color: rgba(4, 4, 8, 0.2);
     border:solid;
     border-color: black;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom: white;
+    border-radius: 10px;
     z-index: 0;
     opacity: 0.8;
     background-color: none;
     height: 3rem;
+}
+.selección:hover{
+    border-color: red;
 }
 
 .noselección:hover{
