@@ -1,5 +1,7 @@
+
+                /*Codigo para aparecer y desaparecer las listas*/
 clic=true;
-function hover(){
+function clickA1(){
     
 
 if (clic==true){
@@ -12,7 +14,7 @@ if (clic==true){
 
 };
 
-function hover2(){
+function clickA2(){
     if (clic==true){
         document.getElementById("unidad2c").style.display="grid";
         clic=false;
@@ -34,80 +36,154 @@ function hover3(){
     
 };
 
-function hover4(){
+function clickA4(){
     if (clic==true){
-        document.getElementById("unidad4c").style.display="grid";
+        document.getElementById("tipodedatos").style.display="grid";
         clic=false;
     }else{
-        document.getElementById("unidad4c").style.display="none";
+        document.getElementById("tipodedatos").style.display="none";
         clic=true
     }
     
 };
-function hover5(){
+function clickB1(){
     if (clic==true){
-        document.getElementById("unidad5c").style.display="grid";
+        document.getElementById("if").style.display="grid";
         clic=false;
     }else{
-        document.getElementById("unidad5c").style.display="none";
+        document.getElementById("if").style.display="none";
         clic=true
     }
         
 };
-function hover6(){
+function clickB2(){
     if (clic==true){
-        document.getElementById("unidad6c").style.display="grid";
+        document.getElementById("Switch").style.display="grid";
         clic=false;
     }else{
-        document.getElementById("unidad6c").style.display="none";
+        document.getElementById("Switch").style.display="none";
         clic=true
     }
     
 };
 
-function hover7(){
+function clickB3(){
     if (clic==true){
-        document.getElementById("unidad7c").style.display="grid";
+        document.getElementById("While").style.display="grid";
         clic=false;
     }else{
-        document.getElementById("unidad7c").style.display="none";
+        document.getElementById("While").style.display="none";
         clic=true
     }
     
 };
 
-function hover8(){
+function clickB4(){
     if (clic==true){
-        document.getElementById("unidad8c").style.display="grid";
+        document.getElementById("Do_while").style.display="grid";
         clic=false;
     }else{
-        document.getElementById("unidad8c").style.display="none";
+        document.getElementById("Do_while").style.display="none";
         clic=true
     }
     
 };
 
-function hover9(){
+function clickB5(){
     if (clic==true){
-        document.getElementById("unidad9c").style.display="grid";
+        document.getElementById("for").style.display="grid";
         clic=false;
     }else{
-        document.getElementById("unidad9c").style.display="none";
+        document.getElementById("for").style.display="none";
         clic=true
     }
     
 };
 
-function hoverb(){
+function clickB6(){
     if (clic==true){
-        document.getElementById("bibliografiac").style.display="grid";
+        document.getElementById("Array").style.display="grid";
         clic=false;
     }else{
-        document.getElementById("bibliografiac").style.display="none";
+        document.getElementById("Array").style.display="none";
         clic=true
     }
     
 };
+
+
+
+function clickB7(){
+    if (clic==true){
+        document.getElementById("salidas_de_bucles").style.display="grid";
+        clic=false;
+    }else{
+        document.getElementById("salidas_de_bucles").style.display="none";
+        clic=true
+    }
+    
+};
+
+/*seccionC POO */
+
+
+function clickC1(){
+    if (clic==true){
+    document.getElementById("Objetos").style.display="grid";
+    clic=false;
+   }else{
+   document.getElementById("Objetos").style.display="none";
+    clic=true;}
+   };
+    function clickC2(){
+    if (clic==true){
+    document.getElementById("Clases").style.display="grid";
+    clic=false;
+   }else{
+   document.getElementById("Clases").style.display="none";
+    clic=true;}
+   };
+    function clickC3(){
+    if (clic==true){
+    document.getElementById("especificadores de accesos").style.display="grid";
+    clic=false;
+   }else{
+   document.getElementById("especificadores de accesos").style.display="none";
+    clic=true;}
+   };
+    function clickC4(){
+    if (clic==true){
+    document.getElementById("creación de clases").style.display="grid";
+    clic=false;
+   }else{
+   document.getElementById("creación de clases").style.display="none";
+    clic=true;}
+   };
+    function clickC5(){
+    if (clic==true){
+    document.getElementById("metodos y propiedades genericas").style.display="grid";
+    clic=false;
+   }else{
+   document.getElementById("metodos y propiedades genericas").style.display="none";
+    clic=true;}
+   };
+    function clickC6(){
+    if (clic==true){
+    document.getElementById("el metodo main").style.display="grid";
+    clic=false;
+   }else{
+   document.getElementById("el metodo main").style.display="none";
+    clic=true;}
+   };
+    function clickC7(){
+    if (clic==true){
+    document.getElementById("destrucción de objetos").style.display="grid";
+    clic=false;
+   }else{
+   document.getElementById("destrucción de objetos").style.display="none";
+    clic=true;}
+   };
+
 
 /*-------------------------------------optimización ventana-- 500--1000--------------------- */
 window.onresize = function(){
@@ -219,3 +295,23 @@ let Poo=["Objetos","Clases","especificadores de accesos","creación de clases","
 
     console.log("<!--******************-->");
 */
+
+console.log("\n");
+let Poo=["Objetos","Clases","especificadores de accesos","creación de clases","metodos y propiedades genericas","el metodo main","destrucción de objetos"];
+let Poo2=["Objetos","Clases","especificadores_de_accesos","creación_de_clases","metodos_y_propiedades_genericas","el_metodo_main","destrucción_de_objetos"];
+
+    contador=0;
+    Poo.forEach((elemento)=>{
+
+        
+        console.log('<div class="seccionC" onclick="clickC'+(contador+1)+'()" > \n <ul><li><h4>'+elemento+'</h4></li></ul>\n</div>');
+        contador++;
+    });
+
+    console.log("************");
+    contador=0;
+    Poo.forEach((elemento)=>{
+
+        console.log('function clickC'+(contador+1)+'(){\n if (clic==true){\n document.getElementById("'+Poo[contador]+'").style.display="grid";\n clic=false;\n}else{\ndocument.getElementById("'+Poo[contador]+'").style.display="none";\n clic=true;}\n};');
+        contador++;
+    });
