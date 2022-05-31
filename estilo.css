@@ -160,6 +160,11 @@ nav a,.noselección a{
 color: red;
 }
 
+.seccionA,.seccionB,.seccionC{
+    border: white solid;
+    
+}
+
 .seccionA:hover,.seccionB:hover,.seccionC:hover{
     border: rgb(211, 5, 5) solid;
     
