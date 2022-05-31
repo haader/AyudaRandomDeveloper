@@ -10,9 +10,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
 
-<link rel="stylesheet" href="./finales.css">
+<link rel="stylesheet" href="./estilo.css">
     
-    <title>DeveloperJAVA</title>
+    <title>AyudaRandomDeveloper</title>
 <!---------------------------------------ICON------------------------------>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -26,7 +26,9 @@
 
             <div class="divlogo" id="divlogo">
                 
-                <a href="#" >DeveloperJAVA</a>
+                <a href="#" id=ayuda-logo>Ayuda</a>
+                <a href="#" id=random-logo>Random</a>
+                <a href="#" id=developer-logo>Developer</a>
 
             </div>
 
@@ -38,7 +40,7 @@
             <div class="menunav" id="menunav">
 
                 <div class="selección">
-                    <a href="./index.html">TERMINAL JAVA</a>
+                    <a href="./index.html">JAVA</a>
                 </div>
                 
 
@@ -48,6 +50,15 @@
 
     </header>
 
+
+    <!--
+
+let introduccion[]={"Introducción a JAVA","Instalando NetBeans","Crear un proyecto en NetBeans","Tipo de datos","Imprimir Datos en Consola","Ingresar valores por teclado"};
+let Fundamentos[]={"if","Switch","While","Do while","for","salidas de bucles"};
+let Poo[]="Objetos","Clases","especificadores de accesos","creación de clases","metodos y propiedades genericas","el metodo main","destrucción de objetos";
+
+
+    -->
 <!-------------------------------------------------------DESARROLLO DE LA PÁGINA-------------------------------------------------------->
 <!--................................CELULAR..................................-->   
 <div class="contenidoswiev">
@@ -61,19 +72,19 @@
         
         <div class="unidadb" id="unidadb">
         
-            <il value="-" ><h4>System.out.println("")</h4></il>
+            <il value="-" ><h4>#0 Istalando Apache NetBeans </h4></il>
         
         </div>  
 
         <div class="unidadc" id="unidadc" >
             
-            <il value="-" > <h4>Unidad 3</h4></il>
+            <il value="-" > <h4>#1 Crear un proyecto en NetBeans</h4></il>
             
         </div>  
 
         <div class="unidadd" id="unidadd">
             
-            <il value="-" ><h4>Unidad 4</h4></il>
+            <il value="-" ><h4>#2 tipo de datos 4</h4></il>
             
         </div>  
 
@@ -119,160 +130,213 @@
         <div class="contenidos" id="contenidos">
 
             
-
-            <div class="unidad1 unidadv" >
-
-                <ul value="-" id="unidad1" onclick="hover()"><il ><h4>Introduccioón a JAVA</h4> </il>
-            
-                        
+            <!--armando frontend-->
+            <!--******************-->
+            <div class="seccion" id="seccion_introduccion"> 
+            <h4>Introduccioón a JAVA</h4>
             </div>
-                
             
 
-            <div class="unidad2 unidadv" >
-                <ul id="unidad2" onclick="hover2()"><il value="-" ><h4>System.out.println("")</h4></il>
-            
-                    
-            </div>  
-
-            <div class="unidad3 unidadv"  >
-                <ul id="unidad3" onclick="hover3()"><li><h4>Variables </h4></li></ul>
-                <div class="unidad3c" id="unidad3c">
-                        
-                            
-                </div>
-            </div>  
-
-            <div class="unidad4" >
-                <ul id="unidad4" onclick="hover4()"><li><h4>Metodo Import</h4></li></ul>
-                <div class="unidad4c" id="unidad4c">
-
-                    <li><a href="#desarrollo" id="IMPteoria">Teoria</a> <br></li>
-                    <li><a href="#IMPEjercicio1" id="IMPEjercicio1">Ejercicio 1</a> <br></li>
-                    <li><a href="#IMPEjercicio2" id="IMPEjercicio2">Ejercicio 2</a> <br></li>
-                    <li><a href="#IMPEjercicio3" id="IMPEjercicio3">Ejercicio 3</a> <br></li>
-                           
-                </div>
-            </div>  
-
-            <div class="unidad5" >
-                <ul id="unidad5"  onclick="hover5()"><li><h4>if Else</h4></li></ul>
-                <div class="unidad5c" id="unidad5c">
-
-                    <li><a href="#desarrollo" id="5">Teoria</a> <br></li>
-                    <li><a href="#ifEjercicio1" id="ifEjercicio1">Ejercicio 1</a> <br></li>
-                    <li><a href="#ifEjercicio2" id="ifEjercicio2">Ejercicio 2</a> <br></li>
-                    <li><a href="#ifEjercicio3" id="ifEjercicio3">Ejercicio 3</a> <br></li>
-                    <li><a href="#ifEjercicio4" id="ifEjercicio4">Ejercicio 4</a> <br></li>
-                    <li><a href="#ifEjercicio5" id="ifEjercicio5">Ejercicio 5</a> <br></li>
-                    <li><a href="#ifEjercicio6" id="ifEjercicio6">Ejercicio 6</a> <br></li>
-                    <li><a href="#ifEjercicio7" id="ifEjercicio7">Ejercicio 7</a> <br></li>
-                    <li><a href="#ifEjercicio8" id="ifEjercicio8">Ejercicio 8</a> <br></li>
-                    <li><a href="#ifEjercicio9" id="ifEjercicio9">Ejercicio 9</a> <br></li>
-                    <li><a href="#ifEjercicio10" id="ifEjercicio10">Ejercicio 10</a> <br></li>
-                        
-                    
+                    <div class="seccionA" onclick="hoverA1()" > 
+                            <ul><li><h4>Introducción</h4></li></ul>
                     </div>
-            </div>
+                    <div class="seccionA" onclick="hoverA2()" > 
+                         <ul><li><h4>Instalando NetBeans</h4></li></ul>
+                    </div>
+                    <div class="seccionA" onclick="hoverA3()" > 
+                         <ul><li><h4>Crear un proyecto en NetBeans</h4></li></ul>
+                    </div>
+                    <div class="seccionA" onclick="hoverA4()" > 
+                        <ul><li><h4>Tipo de datos</h4></li></ul>
 
-            <div class="unidad6" >
-                <ul id="unidad6" onclick="hover6()"><li><h4>bucle while</h4></li></ul>
-                        
-                <div class="unidad6c" id="unidad6c">
-                    
-                    <li><a href="#desarrollo" id="5">Teoria</a> <br></li>
-                    <li><a href="#bucleEjercicio1" id="bucleEjercicio1">Ejercicio 5.1</a> <br></li>
-                    <li><a href="#bucleEjercicio2" id="bucleEjercicio2">Ejercicio 5.2</a> <br></li>
-                    <li><a href="#bucleEjercicio3" id="bucleEjercicio3">Ejercicio 5.3</a> <br></li>
-                    <li><a href="#bucleEjercicio4" id="bucleEjercicio4">Ejercicio 5.4</a> <br></li>
-                    <li><a href="#bucleEjercicio5" id="bucleEjercicio5">Ejercicio 5.5</a> <br></li>
-                    <li><a href="#bucleEjercicio6" id="bucleEjercicio6">Ejercicio 5.6</a> <br></li>
-                    <li><a href="#bucleEjercicio7" id="bucleEjercicio7">Ejercicio 5.7</a> <br></li>
-                    <li><a href="#bucleEjercicio8" id="bucleEjercicio8">Ejercicio 5.8</a> <br></li>
-                    <li><a href="#bucleEjercicio9" id="bucleEjercicio9">Ejercicio 5.9</a> <br></li>
-                    <li><a href="#bucleEjercicio10" id="bucleEjercicio10">Ejercicio 5.10</a> <br></li>
-
-                </div>
-
-            </div>
-
-            <div class="unidadv">
-                <ul id="unidadv"><li><h4>Do while</h4></li></ul>
-            </div>
-
-            <div class="unidad7" >
-                <ul id="unidad7" onclick="hover7()"><li><h4>Ciclo for</h4></li></ul>
-
-                <div class="unidad7c" id="unidad7c">
-                        
-                    
-                    <li><a href="#desarrollo" id="5">Teoria</a> <br></li>
-                    <li><a href="#Ejercicio41" id="Ejercicio41">Ejercicio 4.1</a> <br></li>
-                    <li><a href="#Ejercicio42" id="Ejercicio42">Ejercicio 4.2</a> <br></li>
-                    <li><a href="#Ejercicio43" id="Ejercicio43">Ejercicio 4.3</a> <br></li>
-                    <li><a href="#Ejercicio44" id="Ejercicio44">Ejercicio 4.4</a> <br></li>
-                    <li><a href="#Ejercicio45" id="Ejercicio45">Ejercicio 4.5</a> <br></li>
-                    <li><a href="#Ejercicio46" id="Ejercicio46">Ejercicio 4.6</a> <br></li>
-                    <li><a href="#Ejercicio47" id="Ejercicio47">Ejercicio 4.7</a> <br></li>
-                    <li><a href="#Ejercicio48" id="Ejercicio48">Ejercicio 4.8</a> <br></li>
-                    <li><a href="#Ejercicio49" id="Ejercicio49">Ejercicio 4.9</a> <br></li>
-                    <li><a href="#Ejercicio410" id="Ejercicio410">Ejercicio 4.10</a> <br></li>
-
-                    
-                    
-                        
-                </div>
-            </div>
-
-            <div class="unidad8" >
-                <ul id="unidad8" onclick="hover8()"><li><h4>switch</h4></li></ul>
-
-                <div class="unidad8c" id="unidad8c">
-                        
-                    
-                    <li><a href="#desarrollo" id="5">Teoria</a> <br></li>
-                    <li><a href="#E" id="E">....</a> <br></li>
-                    
-                    
-                        
-                </div>
-            </div>
-
-            <div class="unidad9" >
-                <ul id="unidad9" onclick="hover9()"><li><h4>Arrays (arreglos)</h4></li></ul>
-
-                <div class="unidad9c" id="unidad9c">
-                        
-                    
-                    
-                    <li><a href="#desarrollo" id="5">Teoria</a> <br></li>
-                    <li><a href="#Array1" id="Array1">Ejercicio 5.1</a> <br></li>
-                    <li><a href="#Array2" id="Array2">Ejercicio 5.2</a> <br></li>
-                    <li><a href="#Array3" id="Array3">Ejercicio 5.3</a> <br></li>
-                    <li><a href="#Array4" id="Array4">Ejercicio 5.4</a> <br></li>
-                    <li><a href="#Array5" id="Array5">Ejercicio 5.5</a> <br></li>
-                    <li><a href="#Array6" id="Array6">Ejercicio 5.6</a> <br></li>
-                    <li><a href="#Array7" id="Array7">Ejercicio 5.7</a> <br></li>
-                    <li><a href="#Array8" id="Array8">Ejercicio 5.8</a> <br></li>
-                    <li><a href="#Array9" id="Array9">Ejercicio 5.9</a> <br></li>
-                    <li><a href="#Array10" id="Array10">Ejercicio 5.10</a> <br></li>
-                    <li><a href="#Array11" id="Array11">Ejercicio 5.11</a> <br></li>
-                    <li><a href="#Array12" id="Array12">Ejercicio 5.12</a> <br></li>
-                    <li><a href="#Array13" id="Array13">Ejercicio 5.13</a> <br></li>
-                    <li><a href="#Array14" id="Array14">Ejercicio 5.14</a> <br></li>
-                    <li><a href="#Array15" id="Array15">Ejercicio 5.15</a> <br></li>
-                    <li><a href="#Array16" id="Array16">Ejercicio 5.16</a> <br></li>
-                    <li><a href="#Array17" id="Array17">Ejercicio 5.17</a> <br></li>
-                    <li><a href="#Array18" id="Array18">Ejercicio 5.18</a> <br></li>
-                        
-                </div>
-            </div>
-
-
+                        <div class="unidad9" >
+                            <ul id="unidad9" onclick="hover9()"><li><h4>Arrays (arreglos)</h4></li></ul>
             
-                
-            
+                            <div class="unidad9c" id="unidad9c">
+                                    
+                                
+                                
+                                <li><a href="#desarrollo" id="5">Teoria</a> <br></li>
+                                <li><a href="#Array1" id="Array1">Ejercicio 5.1</a> <br></li>
+                                <li><a href="#Array2" id="Array2">Ejercicio 5.2</a> <br></li>
+                                <li><a href="#Array3" id="Array3">Ejercicio 5.3</a> <br></li>
+                                <li><a href="#Array4" id="Array4">Ejercicio 5.4</a> <br></li>
+                                <li><a href="#Array5" id="Array5">Ejercicio 5.5</a> <br></li>
+                                <li><a href="#Array6" id="Array6">Ejercicio 5.6</a> <br></li>
+                                <li><a href="#Array7" id="Array7">Ejercicio 5.7</a> <br></li>
+                                <li><a href="#Array8" id="Array8">Ejercicio 5.8</a> <br></li>
+                                <li><a href="#Array9" id="Array9">Ejercicio 5.9</a> <br></li>
+                                <li><a href="#Array10" id="Array10">Ejercicio 5.10</a> <br></li>
+                                <li><a href="#Array11" id="Array11">Ejercicio 5.11</a> <br></li>
+                                <li><a href="#Array12" id="Array12">Ejercicio 5.12</a> <br></li>
+                                <li><a href="#Array13" id="Array13">Ejercicio 5.13</a> <br></li>
+                                <li><a href="#Array14" id="Array14">Ejercicio 5.14</a> <br></li>
+                                <li><a href="#Array15" id="Array15">Ejercicio 5.15</a> <br></li>
+                                <li><a href="#Array16" id="Array16">Ejercicio 5.16</a> <br></li>
+                                <li><a href="#Array17" id="Array17">Ejercicio 5.17</a> <br></li>
+                                <li><a href="#Array18" id="Array18">Ejercicio 5.18</a> <br></li>
+                                    
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="seccionA" onclick="hoverA5()" > 
+                        <ul><li><h4>Imprimir Datos en Consola</h4></li></ul>
+                    </div>
+
+                    <div class="seccionA" onclick="hover4()" > 
+                         <ul><li><h4>Ingresar valores por teclado</h4></li></ul>
+                                <div class="unidad4c" id="unidad4c">
+
+                                    <li><a href="#desarrollo" id="IMPteoria">Teoria</a> <br></li>
+                                    <li><a href="#IMPEjercicio1" id="IMPEjercicio1">Ejercicio 1</a> <br></li>
+                                    <li><a href="#IMPEjercicio2" id="IMPEjercicio2">Ejercicio 2</a> <br></li>
+                                    <li><a href="#IMPEjercicio3" id="IMPEjercicio3">Ejercicio 3</a> <br></li>
+                                        
+                                </div>
+
+                    </div>
+
+
+
+
+            <div class="seccion" id="seccion_Fundamentos"> 
+            <h4>Fundamentos</h4>
+            </div>
                     
+
+                    <div class="seccionB" onclick="hoverB1()" > 
+                    <ul><li><h4>if</h4></li></ul>
+                        <div class="subSeccion" id="if">
+                                
+                                <!--aqui va los ejercicios  <div class="unidad5c" id="unidad5c"></div>   --> 
+
+                            <li><a href="#desarrollo" id="5">Teoria</a> <br></li>
+                            <li><a href="#ifEjercicio1" id="ifEjercicio1">Ejercicio 1</a> <br></li>
+                            <li><a href="#ifEjercicio2" id="ifEjercicio2">Ejercicio 2</a> <br></li>
+                            <li><a href="#ifEjercicio3" id="ifEjercicio3">Ejercicio 3</a> <br></li>
+                            <li><a href="#ifEjercicio4" id="ifEjercicio4">Ejercicio 4</a> <br></li>
+                            <li><a href="#ifEjercicio5" id="ifEjercicio5">Ejercicio 5</a> <br></li>
+                            <li><a href="#ifEjercicio6" id="ifEjercicio6">Ejercicio 6</a> <br></li>
+                            <li><a href="#ifEjercicio7" id="ifEjercicio7">Ejercicio 7</a> <br></li>
+                            <li><a href="#ifEjercicio8" id="ifEjercicio8">Ejercicio 8</a> <br></li>
+                            <li><a href="#ifEjercicio9" id="ifEjercicio9">Ejercicio 9</a> <br></li>
+                            <li><a href="#ifEjercicio10" id="ifEjercicio10">Ejercicio 10</a> <br></li>
+                                
+                            
+                                
+                        </div>
+                    </div>
+                    <div class="seccionB" onclick="hoverB2()" > 
+                    <ul><li><h4>Switch</h4></li></ul>
+                    <div class="subSeccion" id="Switch">
+                    <!--aqui va los ejercicios--> 
+
+
+
+                    </div>
+                    </div>
+                    <div class="seccionB" onclick="hoverB3()" > 
+                    <ul><li><h4>While</h4></li></ul>
+                    <div class="subSeccion" id="While">
+                    <!--aqui va los ejercicios--> 
+
+                            <div class="unidad6c" id="unidad6c">
+                            
+                                <li><a href="#desarrollo" id="5">Teoria</a> <br></li>
+                                <li><a href="#bucleEjercicio1" id="bucleEjercicio1">Ejercicio 5.1</a> <br></li>
+                                <li><a href="#bucleEjercicio2" id="bucleEjercicio2">Ejercicio 5.2</a> <br></li>
+                                <li><a href="#bucleEjercicio3" id="bucleEjercicio3">Ejercicio 5.3</a> <br></li>
+                                <li><a href="#bucleEjercicio4" id="bucleEjercicio4">Ejercicio 5.4</a> <br></li>
+                                <li><a href="#bucleEjercicio5" id="bucleEjercicio5">Ejercicio 5.5</a> <br></li>
+                                <li><a href="#bucleEjercicio6" id="bucleEjercicio6">Ejercicio 5.6</a> <br></li>
+                                <li><a href="#bucleEjercicio7" id="bucleEjercicio7">Ejercicio 5.7</a> <br></li>
+                                <li><a href="#bucleEjercicio8" id="bucleEjercicio8">Ejercicio 5.8</a> <br></li>
+                                <li><a href="#bucleEjercicio9" id="bucleEjercicio9">Ejercicio 5.9</a> <br></li>
+                                <li><a href="#bucleEjercicio10" id="bucleEjercicio10">Ejercicio 5.10</a> <br></li>
+            
+                            </div>
+
+                    </div>
+                    </div>
+                    <div class="seccionB" onclick="hoverB4()" > 
+                    <ul><li><h4>Do while</h4></li></ul>
+                    <div class="subSeccion" id="Do_while">
+                    <!--aqui va los ejercicios--> 
+
+
+
+
+                    </div>
+                    </div>
+                    <div class="seccionB" onclick="hoverB5()" > 
+                          <ul><li><h4>for</h4></li></ul>
+                         <div class="subSeccion" id="for">
+                    <!--aqui va los ejercicios--> 
+
+                            <div class="unidad7c" id="unidad7c">
+                                
+                            
+                                <li><a href="#desarrollo" id="5">Teoria</a> <br></li>
+                                <li><a href="#Ejercicio41" id="Ejercicio41">Ejercicio 4.1</a> <br></li>
+                                <li><a href="#Ejercicio42" id="Ejercicio42">Ejercicio 4.2</a> <br></li>
+                                <li><a href="#Ejercicio43" id="Ejercicio43">Ejercicio 4.3</a> <br></li>
+                                <li><a href="#Ejercicio44" id="Ejercicio44">Ejercicio 4.4</a> <br></li>
+                                <li><a href="#Ejercicio45" id="Ejercicio45">Ejercicio 4.5</a> <br></li>
+                                <li><a href="#Ejercicio46" id="Ejercicio46">Ejercicio 4.6</a> <br></li>
+                                <li><a href="#Ejercicio47" id="Ejercicio47">Ejercicio 4.7</a> <br></li>
+                                <li><a href="#Ejercicio48" id="Ejercicio48">Ejercicio 4.8</a> <br></li>
+                                <li><a href="#Ejercicio49" id="Ejercicio49">Ejercicio 4.9</a> <br></li>
+                                <li><a href="#Ejercicio410" id="Ejercicio410">Ejercicio 4.10</a> <br></li>
+            
+                                
+                                
+                                    
+                            </div>
+
+
+                    </div>
+                    </div>
+                    <div class="seccionB" onclick="hoverB6()" > 
+                            <ul><li><h4>salidas de bucles</h4></li></ul>
+                    <div class="subSeccion" id="salidas_de_bucles">
+                    <!--aqui va los ejercicios--> 
+                    </div>
+                    </div>
+
+
+                                
+            <div class="seccion" id="seccion_POO"> 
+         <h4>POO</h4>
+            </div>
+            
+
+                    <div class="seccionC" onclick="hoverC1()" > 
+                            <ul><li><h4>Objetos</h4></li></ul>
+                    </div>
+                    <div class="seccionC" onclick="hoverC2()" > 
+                            <ul><li><h4>Clases</h4></li></ul>
+                    </div>
+                    <div class="seccionC" onclick="hoverC3()" > 
+                            <ul><li><h4>especificadores de accesos</h4></li></ul>
+                    </div>
+                    <div class="seccionC" onclick="hoverC4()" > 
+                            <ul><li><h4>creación de clases</h4></li></ul>
+                    </div>
+                    <div class="seccionC" onclick="hoverC5()" > 
+                            <ul><li><h4>metodos y propiedades genericas</h4></li></ul>
+                    </div>
+                    <div class="seccionC" onclick="hoverC6()" > 
+                            <ul><li><h4>el metodo main</h4></li></ul>
+                    </div>
+                    <div class="seccionC" onclick="hoverC7()" > 
+                            <ul><li><h4>destrucción de objetos</h4></li></ul>
+                    </div>
+                    <!--******************-->
             
 
         </div>
