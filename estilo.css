@@ -92,8 +92,7 @@ nav a,.noselección a{
 color: red;
 }
 
-.unidad1:hover,.unidad2:hover,.unidad3:hover,.unidad4:hover,.unidad5:hover,.unidad6:hover,
-.unidad7:hover,.unidad7v:hover,.unidad8:hover,.unidad9:hover,.unidadv:hover{
+.seccionA:hover{
     border: rgb(211, 5, 5) solid;
     
 }

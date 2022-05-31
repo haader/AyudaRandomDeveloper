@@ -169,6 +169,9 @@ function funtionmenu(){
 
 
 }
+
+
+/*
 console.log("<!--armando frontend-->");
 console.log("<!--******************-->");
 let contador=0;
@@ -215,3 +218,4 @@ let Poo=["Objetos","Clases","especificadores de accesos","creación de clases","
 
 
     console.log("<!--******************-->");
+*/
