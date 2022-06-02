@@ -199,8 +199,62 @@ function clickC1(){
     clic=true;}
    };
 
+   /*               codigo para tamaño de celular        */
+let clicPanel2=false;
 
-/*-------------------------------------optimización ventana-- 500--1000--------------------- */
+   function seleccioncel1(){
+
+    if(clicPanel2==true){
+      document.getElementById("ListTema1","ListTema2","ListTema3").style.display="none";
+        document.getElementById("seccioncel_intro","seccioncel_fundamentos","seccioncel_poo").style.backgroundColor="white";/*seccioncel_intro */
+        clicPanel2=false;
+    }else{
+        document.getElementById("ListTema1").style.display="flex";/*seccioncel_intro */
+        document.getElementById("seccioncel_intro").style.backgroundColor="red";/*seccioncel_intro */
+        document.getElementById("seccioncel_fundamentos","seccioncel_poo").style.backgroundColor="white";/*seccioncel_intro */
+        clicPanel2=true;
+    }
+
+   };
+
+
+
+   function seleccioncel2(){
+
+    if(clicPanel2==true){
+        document.getElementById("ListTema1","ListTema2","ListTema3").style.display="none";
+        document.getElementById("seccioncel_intro","seccioncel_fundamentos","seccioncel_poo").style.backgroundColor="white";/*seccioncel_intro */
+        clicPanel2=false;
+    }else{
+        document.getElementById("ListTema2").style.display="flex";
+        document.getElementById("seccioncel_fundamentos").style.backgroundColor="red";/*seccioncel_intro */
+        document.getElementById("seccioncel_intro","seccioncel_poo").style.backgroundColor="white";/*seccioncel_intro */
+        clicPanel2=true;
+    }
+
+   };
+
+
+
+   function seleccioncel3(){
+
+    if(clicPanel2==true){
+        document.getElementById("ListTema1","ListTema2","ListTema3").style.display="none";
+        document.getElementById("seccioncel_intro","seccioncel_fundamentos","seccioncel_poo").style.backgroundColor="white";/*seccioncel_intro */
+        clicPanel2=false;
+    }else{
+        document.getElementById("ListTema3").style.display="flex";
+        document.getElementById("seccioncel_poo").style.backgroundColor="red";/*seccioncel_intro */
+        document.getElementById("seccioncel_intro","seccioncel_fundamentos").style.backgroundColor="white";/*seccioncel_intro */
+        
+        
+        clicPanel2=true;
+    }
+
+   };
+
+
+/*-------------------------------------optimización ventana-- 500--1000--------------------- 
 window.onresize = function(){
 
     var anchoVentana = window.innerWidth;
@@ -230,7 +284,7 @@ window.onresize = function(){
   
 
 }
-/*-------------------------------------optimización menu desplegable-----320px------------------ */
+/*-------------------------------------optimización menu desplegable-----320px------------------ 
 
 var clicmenu= 1
 
