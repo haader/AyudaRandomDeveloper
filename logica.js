@@ -200,60 +200,62 @@ function clickC1(){
    };
 
    /*               codigo para tamaño de celular        */
-let clicPanel2=false;
 
-   function seleccioncel1(){
-
-    if(clicPanel2==true){
-      document.getElementById("ListTema1","ListTema2","ListTema3").style.display="none";
-        document.getElementById("seccioncel_intro","seccioncel_fundamentos","seccioncel_poo").style.backgroundColor="white";/*seccioncel_intro */
-        clicPanel2=false;
-    }else{
-        document.getElementById("ListTema1").style.display="flex";/*seccioncel_intro */
-        document.getElementById("seccioncel_intro").style.backgroundColor="red";/*seccioncel_intro */
-        document.getElementById("seccioncel_fundamentos","seccioncel_poo").style.backgroundColor="white";/*seccioncel_intro */
-        clicPanel2=true;
-    }
-
-   };
+let seleccion=0;
 
 
+function seleccioncel1(){
+    seleccion=1;
+    switchh();
+}
 
-   function seleccioncel2(){
+function seleccioncel2(){
+    seleccion=2;
+    switchh();
+}
 
-    if(clicPanel2==true){
-        document.getElementById("ListTema1","ListTema2","ListTema3").style.display="none";
-        document.getElementById("seccioncel_intro","seccioncel_fundamentos","seccioncel_poo").style.backgroundColor="white";/*seccioncel_intro */
-        clicPanel2=false;
-    }else{
+
+function seleccioncel3(){
+    seleccion=3;
+    switchh();
+}
+
+function switchh(){
+    
+switch(seleccion){
+    case 1:
+        document.getElementById("seccioncel_intro").style.backgroundColor="rgba(2, 2, 2,0.4)";
+        document.getElementById("seccioncel_fundamentos").style.backgroundColor="rgba(2, 2, 2,0.0)";
+        document.getElementById("seccioncel_poo").style.backgroundColor="rgba(2, 2, 2,0.0)";
+
+        document.getElementById("ListTema1").style.display="flex";
+        document.getElementById("ListTema2").style.display="none";
+        document.getElementById("ListTema3").style.display="none";
+        break;
+        
+    case 2:
+        document.getElementById("seccioncel_intro").style.backgroundColor="rgba(2, 2, 2,0.0)";
+        document.getElementById("seccioncel_fundamentos").style.backgroundColor="rgba(2, 2, 2,0.4)";
+        document.getElementById("seccioncel_poo").style.backgroundColor="rgba(2, 2, 2,0.0)";
+
+        
+        document.getElementById("ListTema1").style.display="none";
+        document.getElementById("ListTema3").style.display="none";
         document.getElementById("ListTema2").style.display="flex";
-        document.getElementById("seccioncel_fundamentos").style.backgroundColor="red";/*seccioncel_intro */
-        document.getElementById("seccioncel_intro","seccioncel_poo").style.backgroundColor="white";/*seccioncel_intro */
-        clicPanel2=true;
-    }
+        break;
+        
+    case 3:
+        document.getElementById("seccioncel_intro").style.backgroundColor="rgba(2, 2, 2,0.0)";
+        document.getElementById("seccioncel_fundamentos").style.backgroundColor="rgba(2, 2, 2,0.0)";
+        document.getElementById("seccioncel_poo").style.backgroundColor="rgba(2, 2, 2,0.4)";
 
-   };
-
-
-
-   function seleccioncel3(){
-
-    if(clicPanel2==true){
-        document.getElementById("ListTema1","ListTema2","ListTema3").style.display="none";
-        document.getElementById("seccioncel_intro","seccioncel_fundamentos","seccioncel_poo").style.backgroundColor="white";/*seccioncel_intro */
-        clicPanel2=false;
-    }else{
+        
+        document.getElementById("ListTema2").style.display="none";
+        document.getElementById("ListTema1").style.display="none";
         document.getElementById("ListTema3").style.display="flex";
-        document.getElementById("seccioncel_poo").style.backgroundColor="red";/*seccioncel_intro */
-        document.getElementById("seccioncel_intro","seccioncel_fundamentos").style.backgroundColor="white";/*seccioncel_intro */
-        
-        
-        clicPanel2=true;
-    }
-
-   };
-
-
+        break;
+}
+}
 /*-------------------------------------optimización ventana-- 500--1000--------------------- 
 window.onresize = function(){
 

@@ -152,9 +152,7 @@ nav a,.noselección a{
     padding: 0.25rem;
 }
 
-.contenidos h4{
-    margin: 5px;
-}
+
 
 .contenidos:hover{
     outline: indigo solid;
@@ -444,17 +442,17 @@ color: red;
     
 
 
-    .contenedorTemaCel{
+    .contenedorTemaCel{/*div que contiene*/
         display: flex;
         outline: 3px solid;
         margin-top: 3rem;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        justify-content: space-around;
+        overflow: hidden;
+        position: relative;
+        
 
     }
 
-    .titleSeccionCel{
+    .titleSeccionCel{/*el nombre del div que contiene el h3 del nombre de la seccion*/
         flex-flow: row;
         flex-grow: 1;
         
@@ -462,7 +460,54 @@ color: red;
 
     .titleSeccionCel h3{
         text-align: center;
+        color: white;
     }
+
+    #imgcel2{
+        position: absolute;
+        width: 100%;
+        margin: auto;
+        
+        z-index: -10;
+    }
+
+/*...............................................ListTema1,2,3........3............................................................*/
+    
+    .ListTemas{/*div que contiene los temas*/
+        
+        
+        outline: solid;
+        margin-top: 16px;
+        display: flex;
+        justify-content: space-around;
+        gap: 1rem;
+        padding: 1rem;
+        flex-wrap: wrap;/*los elemento HIJOS se colocan en varias lineas*/
+        column-gap: 3;
+     
+       
+      
+
+    }
+
+    .temaCel{/*div que contiene los H3*/
+
+        flex-wrap: nowrap;/*especifica si lo elementos HIJOS son obligados a permanecer en una sola linea*/
+        /*wrap= los elemento HIJOS se colocan en varias lineas*/
+        /*nowrap= los elemento HIJOS NO se colocan en varias lineas*/
+        
+    }
+
+    .temaCel h4{/*div que contiene el H3 con elnombre del tema*/
+       display: inline;
+       height: auto;
+       background-color: red;
+       
+    
+        
+       
+    }
+
 
     .unidada,.unidadb,.unidadc,.unidadd,.unidade,.unidadf, .expectativasexp, .bibliografiabi{
         display: inline-block;
@@ -470,9 +515,7 @@ color: red;
         font-size: 0.8rem;
     }
 
-    .temascel h4{
-        margin: 0rem;
-    }
+
 
     .contenidosdes{
         outline: 3px solid;
@@ -506,6 +549,7 @@ font-family:"Roboto Mono",monospace ;
     border: solid;
     border-color: greenyellow;
     background-color: rgb(209, 199, 199);
+    
     
     font-family: "SF Mono","Roboto Mono",monospace;
 }
