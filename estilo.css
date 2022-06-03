@@ -13,6 +13,10 @@
     display:none;
 }
 
+.menunavcel{
+    display: none;
+}
+
 .header{
 
     width: 100%;
@@ -317,6 +321,7 @@ color: red;
         justify-content: space-evenly;
 
         box-shadow: 0px 20px 15px rgba(20, 14, 5, 0.5);
+        background-color: gray;
         
         
     }
@@ -325,10 +330,10 @@ color: red;
        flex-grow: 1;    /*flex-grow: la distribucion de la fila (el tamaño que ocupan en la fila)*/
         padding: 0rem;
         border-color:rgb(92, 40, 40);
-        
-               
-        text-align: center;
+        background-color: ghostwhite;
         align-items: center;
+               
+       
         
         
     }
@@ -340,6 +345,9 @@ color: red;
     .menunavcel .selección a{
 
         text-decoration: none;
+        color: black;
+        text-align: center;
+        
         
         
     }

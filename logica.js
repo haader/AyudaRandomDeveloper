@@ -291,6 +291,14 @@ function funtionmenu(){
 
 }
 
+/*.......................optimizacion de ventana.......................*/ 
+/*al cambiar el tamaño de la ventana se ejecuta la función */
+
+window.onresize = function(){
+    document.getElementById("menunavcel").style.display="none";
+    };
+
+
 /*-------------------------------------optimización ventana-- 500--1000--------------------- 
 window.onresize = function(){
 
