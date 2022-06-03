@@ -199,8 +199,12 @@ function clickC1(){
     clic=true;}
    };
 
-   /*               codigo para tamaño de celular        */
 
+
+
+
+   /*               codigo para tamaño de celular, cuando se presiona el banner 2 (seleccion de seccion)         */
+        /*se cargan los temas en el div */
 let seleccion=0;
 
 
@@ -256,6 +260,37 @@ switch(seleccion){
         break;
 }
 }
+
+
+/*-------------------------------------optimización MENU desplegable-----320px------------------ */
+
+var clicmenu= 1
+
+function funtionmenu(){
+
+    if(clicmenu==1){
+
+        
+        document.getElementById("menunavcel").style.display="flex";
+        
+        document.getElementById("desarrollo").style.marginTop="2rem";
+
+        
+        clicmenu= clicmenu + 1;
+    }else{
+        
+        
+        document.getElementById("menunavcel").style.display="none";
+        
+        document.getElementById("desarrollo").style.marginTop="0rem";
+
+        
+        clicmenu= 1;
+    }
+
+
+}
+
 /*-------------------------------------optimización ventana-- 500--1000--------------------- 
 window.onresize = function(){
 
@@ -284,36 +319,6 @@ window.onresize = function(){
             
    };
   
-
-}
-/*-------------------------------------optimización menu desplegable-----320px------------------ 
-
-var clicmenu= 1
-
-function funtionmenu(){
-
-    if(clicmenu==1){
-
-        document.getElementById("header").style.height="5rem";
-        document.getElementById("nav").style.height="5rem";
-        document.getElementById("menunav").style.display="block";
-        document.getElementById("contenidos").style.display="block";
-        document.getElementById("desarrollo").style.marginTop="2rem";
-
-        
-        clicmenu= clicmenu + 1;
-    }else{
-        
-        document.getElementById("header").style.height="3rem";
-        document.getElementById("nav").style.height="3rem";
-        document.getElementById("menunav").style.display="none";
-        document.getElementById("contenidos").style.display="none";
-        document.getElementById("desarrollo").style.marginTop="0rem";
-
-        
-        clicmenu= 1;
-    }
-
 
 }
 
@@ -365,7 +370,7 @@ let Poo=["Objetos","Clases","especificadores de accesos","creación de clases","
 
 
     console.log("<!--******************-->");
-*/
+
 
 console.log("\n");
 let Poo=["Objetos","Clases","especificadores de accesos","creación de clases","metodos y propiedades genericas","el metodo main","destrucción de objetos"];
@@ -386,3 +391,4 @@ let Poo2=["Objetos","Clases","especificadores_de_accesos","creación_de_clases",
         console.log('function clickC'+(contador+1)+'(){\n if (clic==true){\n document.getElementById("'+Poo[contador]+'").style.display="grid";\n clic=false;\n}else{\ndocument.getElementById("'+Poo[contador]+'").style.display="none";\n clic=true;}\n};');
         contador++;
     });
+*/

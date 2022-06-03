@@ -300,14 +300,57 @@ color: red;
 
 @media screen and (max-width: 415px){
     
+    /*ocultamos LisTemas*/
+    .ListTemas *{
+        display: none;
+    }
+
+    .menunavcel{/*ubicamos el menu nav cel*/
+        outline: solid;
+        color: rgb(92, 40, 40);
+        
+        margin-top: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        display: none;
+        gap: 1rem;
+        justify-content: space-evenly;
+
+        box-shadow: 0px 20px 15px rgba(20, 14, 5, 0.5);
+        
+        
+    }
+
+    .menunavcel .selección{
+       flex-grow: 1;    /*flex-grow: la distribucion de la fila (el tamaño que ocupan en la fila)*/
+        padding: 0rem;
+        border-color:rgb(92, 40, 40);
+        
+               
+        text-align: center;
+        align-items: center;
+        
+        
+    }
+    .selección:hover{
+        border-color: red;
+    }
+    
+
+    .menunavcel .selección a{
+
+        text-decoration: none;
+        
+        
+    }
+
     .header{
         height: 5rem;
     }
 
-
+    
     .divlogo{
-        display: inline;
-        position: absolute;
+       
         margin-bottom: 1rem;
         margin-bottom: 0.6rem;
         padding-right: 0rem;
@@ -315,7 +358,7 @@ color: red;
     }
     .divlogo *{
         font-family: "consola";
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
 
@@ -323,18 +366,20 @@ color: red;
         margin-left: 20px;
         padding-right: 0px;
     }
+
     .menuicon{
         display: inline;
     }
     .menuicon p{
         font-size: 1rem;
         display: inline;
-        padding-left: 2rem;
+        
     }
     
     .nav{
         height: 5rem;
         display: flex;
+        align-items: center;
         /*kkkkkkkkkkkkkkkkkkkkkkk*/
         
 
@@ -478,7 +523,7 @@ color: red;
         
         outline: solid;
         margin-top: 16px;
-        display: flex;
+        
         justify-content: space-around;
         gap: 1rem;
         padding: 1rem;
