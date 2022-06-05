@@ -264,13 +264,13 @@ switch(seleccion){
 
 /*-------------------------------------optimización MENU desplegable-----320px------------------ */
 
-var clicmenu= 1
+var clicmenu= true;
 
 function funtionmenu(){
 
     if(window.innerWidth<=570){
         
-        if(clicmenu==1){
+        if(clicmenu==false){
 
         
             document.getElementById("menunavcel").style.display="flex";
@@ -278,7 +278,7 @@ function funtionmenu(){
             document.getElementById("desarrollo").style.marginTop="2rem";
     
             
-            clicmenu= clicmenu + 1;
+            clicmenu= true;
         }else{
             
             
@@ -287,7 +287,7 @@ function funtionmenu(){
             document.getElementById("desarrollo").style.marginTop="0rem";
     
             
-            clicmenu= 1;
+            clicmenu= false;
         }
     }else{
         console.log("no se puede");
