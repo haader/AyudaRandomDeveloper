@@ -88,7 +88,7 @@
 
                         .divlogo *{
                             font-family: 'Lucida Console', cursive;
-                            font-size: 3rem;
+                            font-size: 2rem;
                             flex-grow: 2;
                             flex-shrink: 3; 
                         }
@@ -134,8 +134,7 @@
 
 .menunav, .noselección, .selección{
     display: inline;
-    margin-right: 3rem;
-    font-size: 1.5rem;
+   
     
 }
 
@@ -151,22 +150,31 @@ nav a,.noselección a{
     color:rgb(10, 9, 10);
 }
 
-.grid{
-    display: grid;
-    grid-template-columns: 25% 75%;
-    margin-top: 3rem;
-}
-.contenidos{
-    outline: black solid;
-    padding: 0.25rem;
-}
+                    .grid{
+                        display: grid;
+                        grid-template-columns: 25% 75%;
+                        margin-top: 3rem;
+                    }
+                    .contenidos{
+                        outline: black solid;
+                        padding: 0.25rem;
+                        
+                    }
 
+                    .contenidos:hover{
+                        outline: indigo solid;
+                    }
 
+                                    /*contenidos configuracion h4 etc*/
 
-.contenidos:hover{
-    outline: indigo solid;
-}
+                                    .modH4{
+                                        margin: 0rem;
+                                        padding: 0rem;
+                                    }
 
+                                    .seccion h4{
+                                        text-align: center;
+                                    }
 .unidad1,.unidad2,.unidad3,.unidad4,.unidad5,.unidad6{
     margin-top: 0.2rem;
     padding: 1px;
@@ -197,7 +205,8 @@ color: red;
     
     outline: black solid;
     padding: 2rem;
-    margin-left: 1rem;   
+    margin-left: 1rem;  
+    
     
 }
 
@@ -236,6 +245,7 @@ color: red;
     margin-right: 0.25rem;
     height: 3rem;
     border-bottom: none;
+    box-shadow: 0px 20px 15px rgb(20 14 5 / 50%);
 }
 
 .selección{

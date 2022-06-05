@@ -103,9 +103,6 @@
         
     }
 
-    .grid{/*seccion contenidos*/
-        margin-top: 1rem;
-    }
 
     .header{
         height: 5rem;
@@ -179,6 +176,7 @@
     .grid{
         display: grid;
         grid-template-columns: none;
+        margin-top: 1rem;
     }
 
     .contenidos{

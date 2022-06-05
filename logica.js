@@ -275,7 +275,7 @@ function funtionmenu(){
         
             document.getElementById("menunavcel").style.display="flex";
             
-            document.getElementById("desarrollo").style.marginTop="2rem";
+            document.getElementById("desarrollo").style.marginTop="1rem";
     
             
             clicmenu= true;
@@ -304,6 +304,15 @@ function funtionmenu(){
 window.onresize = function(){
     
         document.getElementById("menunavcel").style.display="none";
+
+        if(window.innerWidth>=1000){
+            document.getElementById("desarrollo").style.marginTop="0rem";
+        }else if(window.innerWidth<=1000&&window.innerWidth>=570){
+            document.getElementById("desarrollo").style.marginTop="1rem";
+            
+        }
+        
+        
     
     
     };
