@@ -1,0 +1,177 @@
+
+
+/*------------------------------------------------------500-1000 pixeles-------------------*/
+
+@media screen and (min-width: 570px) and ( max-width: 1000px){
+
+    .divlogo{
+        display: inline;
+        padding-right: 2rem;
+        
+    }
+    .logo {
+        padding-right: 0.2rem;
+    }
+   
+    .header{
+        height: 3rem;
+    }
+
+    .menunav{
+        margin-right:0rem;
+    }
+    
+    .nav {
+        width: 100%;
+        display: flex;
+    }
+
+    .nav a {
+        font-size:1rem;
+    }
+
+    .selección, .noselección{
+        padding-top: 0rem;
+        padding-left: 0.20rem;
+        padding-right: 0.20rem;
+        font-size:2rem;
+    }
+
+    .noselección:hover{
+        padding-top: 0rem;
+    }
+/*...............................................ContenedorTemaCel........2............................................................*/
+    
+
+
+    .contenedorTemaCel{/*div que contiene*/
+        display: flex;
+        outline: 3px solid;
+        margin-top: 3rem;
+        overflow: hidden;
+        position: relative;
+        border-radius: 10px;
+        
+
+    }
+
+    .titleSeccionCel{/*el nombre del div que contiene el h3 del nombre de la seccion*/
+        flex-flow: row;
+        flex-grow: 1;
+        
+    }
+
+    .titleSeccionCel h3{
+        text-align: center;
+        color: white;
+    }
+
+    #imgcel2{
+        position: absolute;
+        width: 100%;
+        margin: auto;
+        
+        z-index: -10;
+    }
+
+/*...............................................ListTema1,2,3........3............................................................*/
+    
+    .ListTemas{/*div que contiene los temas*/
+        
+        
+        outline: solid;
+        margin-top: 16px;
+        
+        justify-content: space-around;
+        gap: 1rem;
+        padding: 1rem;
+        flex-wrap: wrap;/*los elemento HIJOS se colocan en varias lineas*/
+        column-gap: 3;
+     
+       
+      
+
+    }
+
+    .temaCel{/*div que contiene los H3*/
+
+        flex-wrap: nowrap;/*especifica si lo elementos HIJOS son obligados a permanecer en una sola linea*/
+        /*wrap= los elemento HIJOS se colocan en varias lineas*/
+        /*nowrap= los elemento HIJOS NO se colocan en varias lineas*/
+        
+    }
+    
+    .temaCel{
+        display: inline;
+    }
+
+    .temaCel h4{/*div que contiene el H3 con elnombre del tema*/
+       display: inline;
+       height: auto;
+       background-color: red;
+       
+    
+        
+       
+    }
+
+
+    .unidada,.unidadb,.unidadc,.unidadd,.unidade,.unidadf, .expectativasexp, .bibliografiabi{
+        display: inline-block;
+        margin-left: 1rem;
+        font-size: 0.8rem;
+    }
+
+
+
+    .contenidosdes{
+        outline: 3px solid;
+        display:block;
+    }
+
+/*...........................................................................................................*/
+
+    .grid{
+        display:inline;
+    }
+
+    .contenidos{
+        display: none;
+    }
+
+    .desarrollo{
+        margin-top: 1rem;
+        margin-left: 0rem;
+     
+    }
+
+}
+
+/*codido java*/
+
+.ejercicio{
+font-family:"Roboto Mono",monospace ;
+}    
+.codigojava{
+    border: solid;
+    border-color: greenyellow;
+    background-color: rgb(209, 199, 199);
+    
+    
+    font-family: "SF Mono","Roboto Mono",monospace;
+}
+
+.textblue{
+    color: rgb(3, 3, 102);
+}
+
+.textorange{
+    color: rgb(189, 124, 3);
+}
+.textgreen{
+    color: rgb(3, 94, 3);
+}
+
+.textgray{
+    color: gray;
+}

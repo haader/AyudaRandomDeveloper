@@ -1,13 +1,18 @@
-
+/*https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-flexbox-tricks*/
 
 /*---------------------DISEÑO REPONSIVO: ESCRITORIO-----------------------*/
 .contenedorTemaCel {
     display:none;
 }
 
-.ListTemas{
+.ListTemas {
     display: none;
 }
+
+.temaCel{
+    display: none;
+}
+
 
 .subSeccion{
     display:none;
@@ -26,8 +31,7 @@
     font-size: 1rem;
         
     text-decoration: none;
-    background-color: white;
-    box-shadow: 0px 20px 15px rgba(20, 14, 5, 0.5);
+   
     padding-bottom: none;
     
 }
@@ -41,6 +45,7 @@
             overflow: hidden;
             border-radius: 50%;
             outline: 1px solid red;
+            box-shadow: 0px 20px 15px rgba(20, 14, 5, 0.5);
         }
         .imagen img{
             width: auto;
@@ -90,7 +95,7 @@
                         .divlogo #random-logo{
                             
                             padding-left: 0px;
-                            color: rgb(212, 205, 205);
+                            color: black;
                             display: inline;
                             padding-right:0rem;
                         }
@@ -98,7 +103,7 @@
                         .divlogo #developer-logo{
                             
                             padding-left: 0px;
-                            color: rgb(212, 205, 205);
+                            color: black;
                             display: inline;
                             padding-right:0rem;
                         }
@@ -106,7 +111,7 @@
                         .divlogo #ayuda-logo{
                             
                             padding-left: 0px;
-                            color: rgb(212, 205, 205);
+                            color: black;
                             display: inline;
                             padding-right:0rem;
                         }
@@ -114,12 +119,12 @@
         .nav{
             
             height: 5rem;
-            background-color: gray;
-            outline: 3px solid;
+           
+            
             display: flex;
             justify-content: space-around;
             align-items: center;
-            color: rgb(92, 40, 40);
+            
         }
 
         .nav a{
@@ -298,326 +303,4 @@ color: red;
 
 /*
 
-/*------------------------------------------RESPONSIVE-------------------------------------*/
 
-/*---------------------415px--------------------------------*/
-
-@media screen and (max-width: 415px){
-    
-    /*ocultamos LisTemas*/
-    .ListTemas *{
-        display: none;
-    }
-
-    .menunavcel{/*ubicamos el menu nav cel*/
-        outline: solid;
-        color: rgb(92, 40, 40);
-        
-        margin-top: 1rem;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        display: none;
-        gap: 1rem;
-        justify-content: space-evenly;
-
-        box-shadow: 0px 20px 15px rgba(20, 14, 5, 0.5);
-        background-color: gray;
-        
-        
-    }
-
-    .menunavcel .selección{
-       flex-grow: 1;    /*flex-grow: la distribucion de la fila (el tamaño que ocupan en la fila)*/
-        padding: 0rem;
-        border-color:rgb(92, 40, 40);
-        background-color: ghostwhite;
-        align-items: center;
-               
-       
-        
-        
-    }
-    .selección:hover{
-        border-color: red;
-    }
-    
-
-    .menunavcel .selección a{
-
-        text-decoration: none;
-        color: black;
-        text-align: center;
-        
-        
-        
-    }
-
-    .header{
-        height: 5rem;
-    }
-
-    
-    .divlogo{
-       
-        margin-bottom: 1rem;
-        margin-bottom: 0.6rem;
-        padding-right: 0rem;
-        
-    }
-    .divlogo *{
-        font-family: "consola";
-        font-size: 1rem;
-    }
-
-
-    .logo{
-        margin-left: 20px;
-        padding-right: 0px;
-    }
-
-    .menuicon{
-        display: inline;
-    }
-    .menuicon p{
-        font-size: 1rem;
-        display: inline;
-        
-    }
-    
-    .nav{
-        height: 5rem;
-        display: flex;
-        align-items: center;
-        /*kkkkkkkkkkkkkkkkkkkkkkk*/
-        
-
-    }
-    
-    
-    .menunav{
-    margin-right: 0rem;
-     display: none;
-    }
-
-    .menunav div a{
-    font-size: 0.55rem;
-
-    }
-
-    .selección-text, .noselección-text{
-        font-size: 13px;
-        padding-top: 0.1rem;
-    }
-
-    .selección-text{
-        font-size: 15px;
-    }
-
-
-    .selección, .noselección{
-        font-size: 1rem;
-        padding-top: 0.1rem;
-        padding-left: 0.25rem;
-        padding-right: 0.25rem;
-    }
-
-    .noselección:hover{
-        padding-top: 0.1rem;
-
-    }
-
-    .grid{
-        display: grid;
-        grid-template-columns: none;
-    }
-
-    .contenidos{
-        height: auto;
-        display: none;
-    }
-    ul{
-        margin: 0rem;
-    }
-
-    .desarrollo{
-        margin-left: 0rem;
-        margin-top: 0rem;
-        height: auto;
-
-    }
-
-    /**/
-}
-
-
-
-/*------------------------------------------------------500-1000 pixeles-------------------*/
-
-@media screen and (min-width: 500px) and ( max-width: 1000px){
-
-    .divlogo{
-        display: inline;
-        padding-right: 2rem;
-        
-    }
-    .logo {
-        padding-right: 0.2rem;
-    }
-   
-    .header{
-        height: 3rem;
-    }
-
-    .menunav{
-        margin-right:0rem;
-    }
-    
-    .nav {
-        width: 100%;
-        display: flex;
-    }
-
-    .nav a {
-        font-size:1rem;
-    }
-
-    .selección, .noselección{
-        padding-top: 0rem;
-        padding-left: 0.20rem;
-        padding-right: 0.20rem;
-        font-size:2rem;
-    }
-
-    .noselección:hover{
-        padding-top: 0rem;
-    }
-/*...............................................ContenedorTemaCel........2............................................................*/
-    
-
-
-    .contenedorTemaCel{/*div que contiene*/
-        display: flex;
-        outline: 3px solid;
-        margin-top: 3rem;
-        overflow: hidden;
-        position: relative;
-        
-
-    }
-
-    .titleSeccionCel{/*el nombre del div que contiene el h3 del nombre de la seccion*/
-        flex-flow: row;
-        flex-grow: 1;
-        
-    }
-
-    .titleSeccionCel h3{
-        text-align: center;
-        color: white;
-    }
-
-    #imgcel2{
-        position: absolute;
-        width: 100%;
-        margin: auto;
-        
-        z-index: -10;
-    }
-
-/*...............................................ListTema1,2,3........3............................................................*/
-    
-    .ListTemas{/*div que contiene los temas*/
-        
-        
-        outline: solid;
-        margin-top: 16px;
-        
-        justify-content: space-around;
-        gap: 1rem;
-        padding: 1rem;
-        flex-wrap: wrap;/*los elemento HIJOS se colocan en varias lineas*/
-        column-gap: 3;
-     
-       
-      
-
-    }
-
-    .temaCel{/*div que contiene los H3*/
-
-        flex-wrap: nowrap;/*especifica si lo elementos HIJOS son obligados a permanecer en una sola linea*/
-        /*wrap= los elemento HIJOS se colocan en varias lineas*/
-        /*nowrap= los elemento HIJOS NO se colocan en varias lineas*/
-        
-    }
-
-    .temaCel h4{/*div que contiene el H3 con elnombre del tema*/
-       display: inline;
-       height: auto;
-       background-color: red;
-       
-    
-        
-       
-    }
-
-
-    .unidada,.unidadb,.unidadc,.unidadd,.unidade,.unidadf, .expectativasexp, .bibliografiabi{
-        display: inline-block;
-        margin-left: 1rem;
-        font-size: 0.8rem;
-    }
-
-
-
-    .contenidosdes{
-        outline: 3px solid;
-        display:block;
-    }
-
-/*...........................................................................................................*/
-
-    .grid{
-        display:inline;
-    }
-
-    .contenidos{
-        display: none;
-    }
-
-    .desarrollo{
-        margin-top: 1rem;
-        margin-left: 0rem;
-        display: none;
-    }
-
-}
-
-/*codido java*/
-
-.ejercicio{
-font-family:"Roboto Mono",monospace ;
-}    
-.codigojava{
-    border: solid;
-    border-color: greenyellow;
-    background-color: rgb(209, 199, 199);
-    
-    
-    font-family: "SF Mono","Roboto Mono",monospace;
-}
-
-.textblue{
-    color: rgb(3, 3, 102);
-}
-
-.textorange{
-    color: rgb(189, 124, 3);
-}
-.textgreen{
-    color: rgb(3, 94, 3);
-}
-
-.textgray{
-    color: gray;
-}

@@ -268,25 +268,32 @@ var clicmenu= 1
 
 function funtionmenu(){
 
-    if(clicmenu==1){
+    if(window.innerWidth<=570){
+        
+        if(clicmenu==1){
 
         
-        document.getElementById("menunavcel").style.display="flex";
-        
-        document.getElementById("desarrollo").style.marginTop="2rem";
-
-        
-        clicmenu= clicmenu + 1;
+            document.getElementById("menunavcel").style.display="flex";
+            
+            document.getElementById("desarrollo").style.marginTop="2rem";
+    
+            
+            clicmenu= clicmenu + 1;
+        }else{
+            
+            
+            document.getElementById("menunavcel").style.display="none";
+            
+            document.getElementById("desarrollo").style.marginTop="0rem";
+    
+            
+            clicmenu= 1;
+        }
     }else{
-        
-        
-        document.getElementById("menunavcel").style.display="none";
-        
-        document.getElementById("desarrollo").style.marginTop="0rem";
-
-        
-        clicmenu= 1;
+        console.log("no se puede");
     }
+
+    
 
 
 }
@@ -295,7 +302,10 @@ function funtionmenu(){
 /*al cambiar el tamaño de la ventana se ejecuta la función */
 
 window.onresize = function(){
-    document.getElementById("menunavcel").style.display="none";
+    
+        document.getElementById("menunavcel").style.display="none";
+    
+    
     };
 
 
