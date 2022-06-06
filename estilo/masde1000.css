@@ -191,11 +191,11 @@ color: red;
 
 .seccionA:hover,.seccionB:hover,.seccionC:hover{
     /*border: rgb(211, 5, 5) solid;*/
-    list-style-image: url("img/java1.png");
+    list-style-image: url("../img/javaColor.png");
     
 }
 
-.seccionA,.seccionB,.seccionC { list-style-image: url("img/java0.png"); }
+.seccionA,.seccionB,.seccionC { list-style-image: url("../img/javaNegro.png"); }
 
 
 .unidad1c,.unidad2c,.unidad3c,.unidad4c,.unidad5c,.unidad6c, .unidad7c,.unidad8c,.unidad9c{
