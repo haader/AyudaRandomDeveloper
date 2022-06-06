@@ -72,9 +72,12 @@
         text-align: center;
         
     }
-
-    .titleSeccionCel{
-        color:white;
+    .titleSeccionCel:Hover{
+        background-Color:rgba(2, 2, 2,0.4);
+    }
+    .titleSeccionCel:hover{cursor:pointer}
+    .titleSeccionCel h3{
+        color: white;
     }
 
 /*ACA*/
@@ -112,6 +115,7 @@
 
     .selección:hover{
         border-color: red;
+        color: rgba(2, 2, 2,0.4);
     }
     
 
