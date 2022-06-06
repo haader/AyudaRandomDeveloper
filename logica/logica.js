@@ -1,14 +1,14 @@
 /*imagen logo, cambiamos el logo al hacer click*/
 
-hover=true;
+let logoclick=true;
 function hoverLogo(){
     console.log("funciona");
-    if (hover==true){
-        document.getElementById("serio").style.display="inline-block";
-        hover=false;
+    if (logoclick==true){
+        document.getElementById("click").style.display="inline-block";
+        logoclick=false;
     }else{
-        document.getElementById("serio").style.display="none";
-        hover=true;
+        document.getElementById("click").style.display="none";
+        logoclick=true;
     }
     
 

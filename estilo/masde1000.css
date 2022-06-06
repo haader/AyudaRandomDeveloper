@@ -70,13 +70,13 @@
                             display: none;
                         }
         
-        .imagen #serio{
+        .imagen #click{/*serio*/
             margin: left 0;
             z-index: 2;
             
         }
 
-        .imagen #cry{
+        .imagen #hover{/*guinio*/
             
             margin: left 0;
             z-index: 1;
@@ -183,7 +183,7 @@ nav a,.noselección a{
 color: red;
 }
 
-.seccionA,.seccionB,.seccionC{
+.seccionA,.seccionB,.seccionC{/*queda bien separado*/
     border: white solid;
     
     
@@ -192,10 +192,12 @@ color: red;
 .seccionA:hover,.seccionB:hover,.seccionC:hover{
     /*border: rgb(211, 5, 5) solid;*/
     list-style-image: url("../img/javaColor.png");
+    color: red;
     
 }
 
 .seccionA,.seccionB,.seccionC { list-style-image: url("../img/javaNegro.png"); }
+.seccionA,.seccionB,.seccionC {cursor: pointer}
 
 
 .unidad1c,.unidad2c,.unidad3c,.unidad4c,.unidad5c,.unidad6c, .unidad7c,.unidad8c,.unidad9c{
