@@ -37,6 +37,7 @@
     }
     .ListTemas{
         margin-top: 1rem;
+        gap: 1rem;
         border-radius: 10px;
         outline: 3px solid rgb(92, 40, 40);
         height: 5rem;
@@ -45,6 +46,7 @@
         padding: 0.5rem;
         box-shadow: 0px 20px 15px rgb(20 14 5 / 50%);
     }
+   
 
     .temaCel{
         display: inline;
@@ -55,7 +57,7 @@
         align-items: center;        
         font-size: 12px;
     }
-
+   
 
     #imgcel2 {
         position: absolute;
@@ -75,33 +77,44 @@
         color:white;
     }
 
+/*ACA*/
+    
 
     .menunavcel .selección{
        flex-grow: 1;    /*flex-grow: la distribucion de la fila (el tamaño que ocupan en la fila)*/
         padding: 0rem;
         border-color:rgb(92, 40, 40);
-        background-color: ghostwhite;
+        /*background-color: ghostwhite;*/
         align-items: center;
         box-shadow: 0px 20px 15px rgba(20, 14, 5, 0.5);
-               
-       
-        
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+              
+    }
+    
+    .menunavcel .selección a{
+
+        text-decoration: none;
+        color: white;
+        font-size: 1.17em;
+        text-align: center;
         
     }
+    #img{
+        display: flex;
+        position: absolute;
+        width: 100%;
+        margin: auto;
+        z-index: -10;
+    }
+
     .selección:hover{
         border-color: red;
     }
     
 
-    .menunavcel .selección a{
-
-        text-decoration: none;
-        color: black;
-        text-align: center;
-        
-        
-        
-    }
 
 
     .header{
