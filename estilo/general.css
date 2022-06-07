@@ -210,7 +210,12 @@
                     }
 
                     .contenidos:hover{
-                        outline: indigo solid;
+                        outline: orange solid;
+                        box-shadow: 0 0 10px red;
+                    }
+                    .desarrollo:hover{
+                        outline: orange solid;
+                        box-shadow: 0 0 10px red;
                     }
 
                                     /*contenidos configuracion h4 etc*/
@@ -221,8 +226,13 @@
                                     }
 
                                     .seccion h4{
+                                        font-size: 1.1rem;
                                         text-align: center;
+                                        font-family: monospace;
+                                        color: orange;
+                                        text-shadow: 0 0 6px black, 0 0 7px black, 0 0 8px black;
                                     }
+                                 
 
 
 .seccionA,.seccionB,.seccionC{/*queda bien separado*/
