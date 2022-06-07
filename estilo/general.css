@@ -119,7 +119,6 @@
                                                         font-family: 'Console', cursive;
                                                         font-size: 1.7rem;
                                                         flex-grow: 2;/*tamaño relativo*/
-                                                        flex-shrink: 0;
                                                         padding-left: 0px;
                                                         display: inline;
                                                         padding-right:0rem;
