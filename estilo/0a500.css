@@ -53,7 +53,7 @@
                                     }
                                     .divlogo a{
                                         font-family: "consola";
-                                        font-size: 1.7rem;
+                                  
                                         width: auto;
                                         height: 2rem;
                                         
@@ -87,7 +87,7 @@
                                                                     display: flex;
                                                                     justify-content: space-around;
                                                                     border-radius: 10px;
-                                                                    width: 9rem;
+                                                              min-width: 4rem;
                                                                     column-gap:2rem;
                                                                         
                                                                 }

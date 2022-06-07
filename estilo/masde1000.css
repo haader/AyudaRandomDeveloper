@@ -108,14 +108,14 @@
                                         display: flex;
                                         position: relative;
                                         justify-content: space-around;
-                                        flex-grow: 2;
+                                        column-gap: 2rem;
 
                                     }
                                             /*logo*/
                                                 
                                                     .divlogo {
                                                         font-family: 'Console', cursive;
-                                                        font-size: 1.7rem;
+                                                    
                                                         flex-grow: 2;/*tamaño relativo*/
                                                         flex-shrink: 0;
                                                         padding-left: 0px;
@@ -123,6 +123,7 @@
                                                         display: inline;
                                                         padding-right:0rem;
                                                         text-align: center;
+                                                        
                                                         
                                                     }
                                                                     
@@ -149,7 +150,7 @@
                                                                         justify-content: center;
                                                                             font-size: 1rem;
                                                                             width: 6rem;
-                                                                            height: 3rem;
+                                                                            height: 2rem;
                                                                             border-radius: 10px;
                                                                             
                                                                     }

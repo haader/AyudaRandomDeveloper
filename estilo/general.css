@@ -23,7 +23,7 @@
     height: 3rem;
     text-align: left;
     z-index: 2;
-    font-size: 1rem;
+   
         
     text-decoration: none;
    
@@ -103,7 +103,8 @@
                                         display: flex;
                                         position: relative;
                                         justify-content: space-around;
-                                        flex-grow: 2;
+                                        column-gap: 2rem;
+                                        align-items: flex-end;
 
                                     }
                                             /*logo*/
@@ -140,7 +141,7 @@
                                                                         position: relative;
                                                                         display: flex;
                                                                         justify-content: center;
-                                                                            font-size: 1rem;
+                                                                    
                                                                             
                                                                     }
 
