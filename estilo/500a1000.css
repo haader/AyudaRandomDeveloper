@@ -34,7 +34,7 @@
                             display: flex;
                             position: relative;
                             justify-content: space-around;
-                            align-items: flex-end;
+                            align-items: center;
                             flex-grow: 2;
                             column-gap: 2vw;
                            
