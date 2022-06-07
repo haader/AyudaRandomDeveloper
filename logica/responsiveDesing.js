@@ -65,7 +65,7 @@
         
         function funtionmenu(){
         
-            if(window.innerWidth<=570){
+            
                 
                 if(clicmenu==false){
         
@@ -79,20 +79,13 @@
                 }else{
                     
                     
-                    document.getElementById("menunavcel").style.display="none";
+                    document.getElementById("menunavcel").style.display="flex";
                     
                     document.getElementById("desarrollo").style.marginTop="0rem";
             
                     
                     clicmenu= false;
-                }
-            }else{
-                console.log("no se puede");
-            }
-        
-            
-        
-        
+          
         }
         
         /*.......................optimizacion de ventana.......................*/ 
@@ -100,7 +93,7 @@
         
         window.onresize = function(){
             
-                document.getElementById("menunavcel").style.display="none";
+               /* document.getElementById("menunavcel").style.display="none";*/
         
                 if(window.innerWidth>=1000){
                     document.getElementById("desarrollo").style.marginTop="0rem";
@@ -115,4 +108,4 @@
             };
         
         
-        
+        }

@@ -4,14 +4,7 @@
 
 @media screen and (min-width: 570px) and ( max-width: 1000px){
 
-    .divlogo{
-        display: inline;
-    
-        
-    }
-    .logo {
-        padding-right: 0.2rem;
-    }
+  
    
     .header{
         height: 3rem;
@@ -24,27 +17,94 @@
     .nav {
         width: 100%;
         display: flex;
+        gap:1rem;
     }
 
     .nav a {
         font-size:1rem;
     }
+                        /*ACA inicio banner */
 
-    .selección, .noselección{
-        text-align: center;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        margin-left: 0.25rem;
-        margin-right: 0.25rem;
-        font-size:1rem;
-        box-shadow: 0px 20px 15px rgb(20 14 5 / 50%);
-    }
+                        /*IMAGEN*/
+                        /*FLEX*/
+                        .flex{
+                            display: flex;
+                            position: relative;
+                            justify-content: space-around;
+                            flex-grow: 2;
 
-    .noselección:hover{
-        padding-top: 0rem;
-    }
+                        }
+                                /*LOGO*/
+
+                                                .divlogo {
+                                                    display: flex;
+                                                    flex-grow: 2;
+                                                    position: relative;
+                                                    text-align: center;
+                                                    justify-items: baseline;
+                                                }
+                                                                            .divlogo a{
+                                                                                text-align: center;
+                                                                                font-size: 1.4rem;
+                                                                            }
+                              
+                                /*MENUNAVCEL*/
+                                            .menunavcel{/*ubicamos el menu nav cel*/
+                                                    
+                                                position: relative;
+                                                display: flex;
+                                                flex-grow: 2;
+                                            
+                                                gap: 1rem;
+                                                justify-content: space-around;
+
+                                            }
+
+                                                                        .menunavcel .selección{
+                                                                            position: relative;
+                                                                           
+                                                                            display: flex;
+                                                                            flex-grow: 1;    /*flex-grow: la distribucion de la fila (el tamaño que ocupan en la fila)*/
+                                                                            border-color:rgb(92, 40, 40);
+                                                                            align-items: center;                          
+                                                                            overflow: hidden;
+                                                                            justify-content: center;
+                                                                            font-size: 1rem;
+                                                                            box-shadow: 0px 20px 15px rgba(20, 14, 5, 0.5);
+                                                                            border-radius: 10px;
+                                                                            height: 2rem;
+                                                                            width: 3rem;
+                                                                            
+                                                                                
+                                                                        }
+
+                                                                    
+                                                                        
+                                                                        .menunavcel .selección a{
+                                                                            position: absolute;
+                                                                            display: inline;
+                                                                            text-decoration: none;
+                                                                            color: white;
+                                                                            font-size: 1.17em;
+                                                                            text-align: center;
+                                                                            
+                                                                        }
+                                                                        #img{
+                                                                            display: inline;
+                                                                            position: relative;
+                                                                            width: 100%;
+                                                                            margin: auto;
+                                                                            z-index: 0;
+                                                                        }
+
+                                                                        .selección:hover{
+                                                                            border-color: red;
+                                                                            color: rgba(2, 2, 2,0.4);
+                                                                        }
+
+                                                                    
+                                                                        
+                                        /*fin*/
 /*...............................................ContenedorTemaCel........2............................................................*/
     
 
@@ -121,12 +181,6 @@
        
     }
 
-
-    .unidada,.unidadb,.unidadc,.unidadd,.unidade,.unidadf, .expectativasexp, .bibliografiabi{
-        display: inline-block;
-        margin-left: 1rem;
-        font-size: 0.8rem;
-    }
 
 
 

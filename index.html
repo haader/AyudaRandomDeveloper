@@ -9,12 +9,16 @@
         <meta name="robots" content="index">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+
+
 <!--CARGAMOS LOS ESTILOS-->
+<link rel="stylesheet" href="estilo/general.css">
 <link rel="stylesheet" href="estilo/masde1000.css">
 <link rel="stylesheet" href="estilo/500a1000.css">
 <link rel="stylesheet" href="estilo/0a500.css">
 
-<link rel="shortcut icon" href="./img/icono.png" />
+
+<link rel="shortcut icon" href="./img/icono.png" /><!--CARGAMOS EL ICONO DE LA PÁGINA-->
     
     <title>AyudaRandomDeveloper</title>
 <!---------------------------------------ICON------------------------------>
@@ -35,6 +39,7 @@
                 <img id="click" src="./img/click.png" alt="">
             </div>
             
+        <div class="flex">
 
             <div class="divlogo" id="divlogo" onclick="funtionmenu()">
                 
@@ -44,28 +49,31 @@
 
             </div>
 
-           <!--
-                <div class="menuicon" id="menuicon" onclick="funtionmenu()">
-                <p>MENU</p><span id="iconmenu"  class="icon-list"></span>
+            <div class="menunavcel" id="menunavcel">   <!--el contenedor tiene al banner que desaparece en versión ESCRITORIO y TABLET-->
 
+
+                <!--ESTE BANNER ES EL QUE BAMOS A UTILIZAR PARA CARGAR LAS DISTINTAS PAGINAS-->
+                
+                    <div class="selección">
+                        <img id="img" src="img/fondo2.png" alt="">
+                        <a href="./index.html">JAVA</a>
+                        
+                    </div>
+
+                    <div class="selección">
+                        <img id="img" src="img/fondo2.png" alt="">
+                        <a href="./index.html">Whatsapp</a>
+                    </div>
+
+                    <div class="selección">
+                        <img id="img" src="img/fondo2.png" alt="">
+                        <a href="./index.html">About</a>
+                    </div>
+                
             </div>
+
+        </div>
         
-        -->
-
-            <div class="menunav" id="menunav">
-
-                <div class="selección">
-                    <a href="./index.html">JAVA</a>
-                </div>
-                <div class="selección">
-                    <a href="./index.html">Whatsapp</a>
-                </div>
-                <div class="selección">
-                    <a href="./index.html">About</a>
-                </div>
-
-            </div>
-
         </nav>
 
     </header>
