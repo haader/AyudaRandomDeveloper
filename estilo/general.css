@@ -115,11 +115,16 @@
                                                         flex-grow: 2;/*tamaño relativo*/
                                                         flex-shrink: 0;
                                                         padding-left: 0px;
-                                                        color: black;
                                                         display: inline;
                                                         padding-right:0rem;
                                                         
                                                     }
+                                                    .divlogo a{
+                                                        color: black;
+                                                        text-decoration: none;
+                                                    }
+
+                                                    
                                                                     
                                             /*menunavecel*/
 
@@ -143,6 +148,12 @@
                                                                         justify-content: center;
                                                                     
                                                                             
+                                                                    }
+
+                                                                    .menunavcel .selección:hover{
+                                                                        border:2px solid;
+                                                                        color: red;
+                                                                        
                                                                     }
 
                                                                     
@@ -205,6 +216,10 @@
     border: white solid;
     
     
+}
+
+.titleSeccionCel:Hover{
+    background-Color:rgba(2, 2, 2,0.4);
 }
 
 .seccionA:hover,.seccionB:hover,.seccionC:hover{

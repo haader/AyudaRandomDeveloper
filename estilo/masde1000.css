@@ -28,7 +28,7 @@
     height: 3rem;
     text-align: left;
     z-index: 2;
-    font-size: 1rem;
+  
         
     text-decoration: none;
    
@@ -108,7 +108,7 @@
                                         display: flex;
                                         position: relative;
                                         justify-content: space-around;
-                                        column-gap: 2rem;
+                                        column-gap: 15rem;
 
                                     }
                                             /*logo*/
@@ -125,6 +125,9 @@
                                                         text-align: center;
                                                         
                                                         
+                                                    }
+                                                    .divlogo a{
+                                                        font-size: 2rem;
                                                     }
                                                                     
                                             /*menunavecel*/

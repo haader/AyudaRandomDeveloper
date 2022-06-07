@@ -174,9 +174,7 @@
     text-align: center;
     
 }
-.titleSeccionCel:Hover{
-    background-Color:rgba(2, 2, 2,0.4);
-}
+
 .titleSeccionCel:hover{cursor:pointer}
 .titleSeccionCel h3{
     color: white;

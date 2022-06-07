@@ -34,7 +34,10 @@
                             display: flex;
                             position: relative;
                             justify-content: space-around;
-                            align-items: flex-start;
+                            align-items: flex-end;
+                            flex-grow: 2;
+                            column-gap: 2vw;
+                           
                             
 
                         }
@@ -179,7 +182,7 @@
     .temaCel h4{/*div que contiene el H3 con elnombre del tema*/
        display: inline;
        height: auto;
-       background-color: red;
+       
        
     
         
