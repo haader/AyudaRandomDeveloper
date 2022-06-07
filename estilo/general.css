@@ -42,6 +42,12 @@
             outline: 1px solid red;
             box-shadow: 0px 20px 15px rgba(20, 14, 5, 0.5);
         }
+
+        .imagen:hover{
+            outline: 2px solid red;
+            
+        }
+
         .imagen img{
             width: auto;
             height: 100%;
@@ -231,8 +237,10 @@
                                         font-family: monospace;
                                         color: orange;
                                         text-shadow: 0 0 6px black, 0 0 7px black, 0 0 8px black;
+                                        
                                     }
-                                 
+                                    .seccion h4:hover{cursor:default;}
+                                    
 
 
 .seccionA,.seccionB,.seccionC{/*queda bien separado*/
@@ -248,7 +256,7 @@
 .seccionA:hover,.seccionB:hover,.seccionC:hover{
     /*border: rgb(211, 5, 5) solid;*/
     list-style-image: url("../img/javaColor.png");
-    color: red;
+    color: rgb(68, 59, 202);
     
 }
 
