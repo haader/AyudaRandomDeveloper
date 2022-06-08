@@ -6,9 +6,7 @@
 
   
    
-    .header{
-        height: 3rem;
-    }
+    
 
     .menunav{
         margin-right:0rem;
@@ -120,7 +118,6 @@
     .contenedorTemaCel{/*div que contiene los titulos de las SECCIONES POO INTRODUCCION ECT*/
         display: flex;
         outline: 3px solid;
-        margin-top: 3rem;
         overflow: hidden;
         position: relative;
         border-radius: 10px;
@@ -138,6 +135,7 @@
     .titleSeccionCel h3{
         text-align: center;
         color: white;
+        text-shadow: 0 0 5px black, 0 0 6px black, 0 0 7px black;
     }
 
     #imgcel2{

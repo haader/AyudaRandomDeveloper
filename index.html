@@ -18,15 +18,13 @@
 <link rel="stylesheet" href="estilo/0a500.css">
 
 
-<link rel="shortcut icon" href="./img/icono.png" /><!--CARGAMOS EL ICONO DE LA PÁGINA-->
+<link rel="shortcut icon" href="./img/icono.png" /><!--CARGAMOS EL ICONO DE LA PESTAÑA-->
     
     <title>AyudaRandomDeveloper</title>
-<!---------------------------------------ICON------------------------------>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
 
-    
 </head>
+
+
 <body>
 
     <header class="header" id="header">
@@ -55,18 +53,18 @@
                 
                     <div class="selección">
                         <img id="img" src="img/fondo2.png" alt="">
-                        <a class="colora" href="./index.html">JAVA</a>
+                        <a class="colora" id="java" href="#">JAVA</a>
                         
                     </div>
 
                     <div class="selección">
                         <img id="img" src="img/fondo2.png" alt="">
-                        <a class="colora" href="./index.html">Whatsapp</a>
+                        <a class="colora" id="whatsapp" href="#">Whatsapp</a>
                     </div>
 
                     <div class="selección">
                         <img id="img" src="img/fondo2.png" alt="">
-                        <a class="colora" href="./index.html">About</a>
+                        <a class="colora" id="about" href="#">About</a>
                     </div>
                 
             </div>
@@ -77,14 +75,17 @@
 
     </header>
 
-    <!--llamamos a la seccion del celular-->
-    <div class="celular">
+
+
+
+
+    <div class="container" id="container"><!--CONTENEDOR DONDE SE CARGAN LAS DIFERENTES SECCIONES-->
+
+
 
     </div>
-    <!--llamaos a la seccion ecritorio-->
-    <div class="escritorio">
 
-    </div>
+   
     <!--llamamo al footer-->
     <div class="footer">
 
@@ -99,442 +100,46 @@
    
     
 </body>
-
+<!--cagamos los archivos html-->
 
 <script type="text/javascript" src="./jquery.js"></script>
 
-    <script>
-        $(document).ready(function () {
-        $('.celular').load('./celular.html');
-        });
-    </script>
+                    <script>/*CARGAMOS EL FOOTER*/
+                        $(document).ready(function () {
+                        $('.footer').load('./footer.html');
+                        });
+                    
+                        /*cargamos el html java (DEFAULT)*/
+                        $(document).ready(function () {
+                        $('.container').load('./java.html');
+                        });
 
-<script>
-    $(document).ready(function () {
-    $('.escritorio').load('./escritorio.html');
-    });
-</script>
-
-<script>
-    $(document).ready(function () {
-    $('.footer').load('./footer.html');
-    });
-</script>
-
-    <script>
-        $(document).ready(function(){
-        $('#AQ').click(function(){
-        $('#desarrollo').load("AQ.html");
-        });
-    });
-
-        $(document).ready(function(){
-        $('#EDI2').click(function(){
-        $('#desarrollo').load("EDI2.html");
-        });
-    });
-    
-    $(document).ready(function(){
-        $('#logo').click(function(){
-        $('#desarrollo').load("logo.html");
-        });
-    });
-
-    $(document).ready(function(){
-    $('#4').click(function(){
-    $('#desarrollo').load("contenido1-4.html");
+/*AL HACER CLIC EN #JAVA CARGAMOS LA SECCION JAVA*/
+$(document).ready(function () {
+$('#java').click(function(){
+$('#container').load('java.html');
     });
 });
 
-$(document).ready(function(){
-    $('#5').click(function(){
-    $('#desarrollo').load("contenido1-5.html");
+/*AL HACER CLIC EN #JAVA CARGAMOS LA SECCION WHATSAPP*/
+$(document).ready(function () {
+$('#whatsapp').click(function(){
+$('#container').load('whatsapp.html');
     });
 });
 
-$(document).ready(function(){
-    $('#5proteinas').click(function(){
-    $('#desarrollo').load("contenido1-5proteinas.html");
-    });
-});
-
-/*........................................METODO IMPORT..............................*/
-
-
-
-$(document).ready(function(){
-    $('#IMPteoria').click(function(){
-    $('#desarrollo').load("IMPteoria.html");
-    });
-});
-
-$(document).ready(function(){
-    $('#IMPEjercicio1').click(function(){
-    $('#desarrollo').load("IMPEjercicio1.html");
-    });
-});
-
-$(document).ready(function(){
-    $('#IMPEjercicio2').click(function(){
-    $('#desarrollo').load("IMPEjercicio2.html");
-    });
-});
-
-$(document).ready(function(){
-    $('#IMPEjercicio3').click(function(){
-    $('#desarrollo').load("IMPEjercicio3.html");
+/*AL HACER CLIC EN #JAVA CARGAMOS LA SECCION ABOUT*/
+$(document).ready(function () {
+$('#about').click(function(){
+$('#container').load("about.html");
     });
 });
 
 
 
-/*...........................................IF...................................*/
-$(document).ready(function(){
-    $('#ifEjercicio1').click(function(){
-    $('#desarrollo').load("ifEjercicio1.html");
-    });
-});
-
-$(document).ready(function(){
-    $('#ifEjercicio2').click(function(){
-    $('#desarrollo').load("ifEjercicio2.html");
-    });
-});
-
-$(document).ready(function(){
-    $('#ifEjercicio3').click(function(){
-    $('#desarrollo').load("ifEjercicio3.html");
-    });
-});
-
-$(document).ready(function(){
-    $('#ifEjercicio4').click(function(){
-    $('#desarrollo').load("ifEjercicio4.html");
-    });
-});
-
-$(document).ready(function(){
-    $('#ifEjercicio5').click(function(){
-    $('#desarrollo').load("ifEjercicio5.html");
-    });
-});
-
-$(document).ready(function(){
-    $('#ifEjercicio6').click(function(){
-    $('#desarrollo').load("ifEjercicio6.html");
-    });
-});
-
-$(document).ready(function(){
-    $('#ifEjercicio7').click(function(){
-    $('#desarrollo').load("ifEjercicio7.html");
-    });
-});
-
-$(document).ready(function(){
-    $('#ifEjercicio8').click(function(){
-    $('#desarrollo').load("ifEjercicio8.html");
-    });
-});
-
-$(document).ready(function(){
-    $('#ifEjercicio9').click(function(){
-    $('#desarrollo').load("ifEjercicio9.html");
-    });
-});
-
-$(document).ready(function(){
-    $('#ifEjercicio10').click(function(){
-    $('#desarrollo').load("ifEjercicio10.html");
-    });
-});
+                    </script>
 
 
-/*...........................................BUCLE WHILE...................................*/
-$(document).ready(function(){
-    $('#bucleEjercicio1').click(function(){
-    $('#desarrollo').load("bucleEjercicio1.html");
-    });
-});
-
-$(document).ready(function(){
-    $('#bucleEjercicio2').click(function(){
-    $('#desarrollo').load("bucleEjercicio2.html");
-    });
-});
-
-$(document).ready(function(){
-    $('#bucleEjercicio3').click(function(){
-    $('#desarrollo').load("bucleEjercicio3.html");
-    });
-});
-
-$(document).ready(function(){
-    $('#bucleEjercicio4').click(function(){
-    $('#desarrollo').load("bucleEjercicio4.html");
-    });
-});
-
-$(document).ready(function(){
-    $('#bucleEjercicio5').click(function(){
-    $('#desarrollo').load("bucleEjercicio5.html");
-    });
-});
-
-$(document).ready(function(){
-    $('#bucleEjercicio6').click(function(){
-    $('#desarrollo').load("bucleEjercicio6.html");
-    });
-});
-
-$(document).ready(function(){
-    $('#bucleEjercicio7').click(function(){
-    $('#desarrollo').load("bucleEjercicio7.html");
-    });
-});
-
-$(document).ready(function(){
-    $('#bucleEjercicio8').click(function(){
-    $('#desarrollo').load("bucleEjercicio8.html");
-    });
-});
-
-$(document).ready(function(){
-    $('#bucleEjercicio9').click(function(){
-    $('#desarrollo').load("bucleEjercicio9.html");
-    });
-});
-
-$(document).ready(function(){
-    $('#bucleEjercicio10').click(function(){
-    $('#desarrollo').load("bucleEjercicio10.html");
-    });
-});
-
-
-
-/*...........................................CICLO FOR...................................*/
-$(document).ready(function(){
-    $('#Ejercicio41').click(function(){
-    $('#desarrollo').load("Ejercicio41.html");
-    });
-});
-
-$(document).ready(function(){
-    $('#Ejercicio42').click(function(){
-    $('#desarrollo').load("Ejercicio42.html");
-    });
-});
-
-$(document).ready(function(){
-    $('#Ejercicio43').click(function(){
-    $('#desarrollo').load("Ejercicio43.html");
-    });
-});
-
-$(document).ready(function(){
-    $('#Ejercicio44').click(function(){
-    $('#desarrollo').load("Ejercicio44.html");
-    });
-});
-
-$(document).ready(function(){
-    $('#Ejercicio45').click(function(){
-    $('#desarrollo').load("Ejercicio45.html");
-    });
-});
-
-$(document).ready(function(){
-    $('#Ejercicio46').click(function(){
-    $('#desarrollo').load("Ejercicio46.html");
-    });
-});
-
-$(document).ready(function(){
-    $('#Ejercicio47').click(function(){
-    $('#desarrollo').load("Ejercicio47.html");
-    });
-});
-
-$(document).ready(function(){
-    $('#Ejercicio48').click(function(){
-    $('#desarrollo').load("Ejercicio48.html");
-    });
-});
-
-$(document).ready(function(){
-    $('#Ejercicio49').click(function(){
-    $('#desarrollo').load("Ejercicio49.html");
-    });
-});
-
-$(document).ready(function(){
-    $('#Ejercicio410').click(function(){
-    $('#desarrollo').load("Ejercicio410.html");
-    });
-});
-/*..........................Array...................................................*/
-
-$(document).ready(function(){
-    $('#Array1').click(function(){
-    $('#desarrollo').load("Array1.html");
-    });
-});
-
-$(document).ready(function(){
-    $('#Array2').click(function(){
-    $('#desarrollo').load("Array2.html");
-    });
-});
-$(document).ready(function(){
-    $('#Array3').click(function(){
-    $('#desarrollo').load("Array3.html");
-    });
-});
-$(document).ready(function(){
-    $('#Array4').click(function(){
-    $('#desarrollo').load("Array4.html");
-    });
-});
-$(document).ready(function(){
-    $('#Array5').click(function(){
-    $('#desarrollo').load("Array5.html");
-    });
-});
-$(document).ready(function(){
-    $('#Array6').click(function(){
-    $('#desarrollo').load("Array6.html");
-    });
-});
-$(document).ready(function(){
-    $('#Array7').click(function(){
-    $('#desarrollo').load("Array7.html");
-    });
-});
-$(document).ready(function(){
-    $('#Array8').click(function(){
-    $('#desarrollo').load("Array8.html");
-    });
-});
-$(document).ready(function(){
-    $('#Array9').click(function(){
-    $('#desarrollo').load("Array9.html");
-    });
-});
-$(document).ready(function(){
-    $('#Array10').click(function(){
-    $('#desarrollo').load("Array10.html");
-    });
-});
-$(document).ready(function(){
-    $('#Array11').click(function(){
-    $('#desarrollo').load("Array11.html");
-    });
-});
-$(document).ready(function(){
-    $('#Array12').click(function(){
-    $('#desarrollo').load("Array12.html");
-    });
-});
-$(document).ready(function(){
-    $('#Array13').click(function(){
-    $('#desarrollo').load("Array13.html");
-    });
-});
-$(document).ready(function(){
-    $('#Array14').click(function(){
-    $('#desarrollo').load("Array14.html");
-    });
-});
-$(document).ready(function(){
-    $('#Array15').click(function(){
-    $('#desarrollo').load("Array15.html");
-    });
-});
-$(document).ready(function(){
-    $('#Array16').click(function(){
-    $('#desarrollo').load("Array16.html");
-    });
-});
-$(document).ready(function(){
-    $('#Array17').click(function(){
-    $('#desarrollo').load("Array17.html");
-    });
-});
-$(document).ready(function(){
-    $('#Array18').click(function(){
-    $('#desarrollo').load("Array18.html");
-    });
-});
-
-
-
-
-
-    /*.........500 a 1000 px ................... */
-
-    function unidada(){
-            /*document.getElementById("contenidosdes").style.display="block";*/
-            document.getElementById("contenidosdes").style.display="block"
-            document.getElementById("contenidosdes").style.outlineColor="red";
-            
-
-            $('#contenidosdes').load("/Finales-2021/contenidosdes/unidad1.html");
-        }
-    
-
-    $(document).ready(function(){
-        $('#unidadb').click(function(){
-            /*document.getElementById("contenidosdes").style.display="block";*/
-            $('#contenidosdes').load("/Finales-2021/contenidosdes/unidad2.html");
-            colorunidad="unidadb";
-
-        });
-    });
-
-    $(document).ready(function(){
-        $('#unidadc').click(function(){
-            /*document.getElementById("contenidosdes").style.display="block";*/
-            $('#contenidosdes').load("/Finales-2021/contenidosdes/unidad3.html");
-        });
-    });
-
-    $(document).ready(function(){
-        $('#unidadd').click(function(){
-            /*document.getElementById("contenidosdes").style.display="block";*/
-            $('#contenidosdes').load("/Finales-2021/contenidosdes/unidad4.html");
-        });
-    });
-
-    $(document).ready(function(){
-        $('#unidade').click(function(){
-            /*document.getElementById("contenidosdes").style.display="block";*/
-            $('#contenidosdes').load("/Finales-2021/contenidosdes/unidad5.html");
-        });
-    });
-
-    $(document).ready(function(){
-        $('#unidadf').click(function(){
-            /*document.getElementById("contenidosdes").style.display="block";*/
-            $('#contenidosdes').load("/Finales-2021/contenidosdes/unidad6.html");
-        });
-    });
-
-    $(document).ready(function(){
-        $('#bibliografiabi').click(function(){
-            /*document.getElementById("contenidosdes").style.display="block";*/
-            $('#contenidosdes').load("/Finales-2021/contenidosdes/bibliografia.html");
-        });
-    });
-    
-    $(document).ready(function(){
-        $('#expectativasexp').click(function(){
-            /*document.getElementById("contenidosdes").style.display="block";*/
-            $('#contenidosdes').load("/Finales-2021/contenidosdes/expectativa.html");
-        });
-    });
-
-    </script>
 
 <script type="text/javascript" src="logica/logica.js"></script>
 <script type="text/javascript" src="logica/clickTemas.js"></script>

@@ -136,7 +136,6 @@
     overflow: hidden;
     position: relative;
     border-radius: 10px;
-    margin-top: 1rem;
     justify-content: space-around;
     box-shadow: 0px 20px 15px rgb(20 14 5 / 50%);
 }
@@ -181,6 +180,7 @@
 .titleSeccionCel:hover{cursor:pointer}
 .titleSeccionCel h3{
     color: white;
+    text-shadow: 0 0 5px black, 0 0 6px black, 0 0 7px black;
 }
     
  
